@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Bai1
+namespace Buoi3
 {
     public partial class Bai1 : Form
     {
@@ -65,7 +65,7 @@ namespace Bai1
         {
             int a = int.Parse(txtA.Text);
             int b = int.Parse(txtB.Text);
-            int kq = a + b;
+            int kq = a * b;
 
             txtKQ.Text = kq.ToString();
         }
@@ -75,11 +75,7 @@ namespace Bai1
             Control ctr = (Control)sender;
             if(ctr.Text.Length > 0 && !Char.IsDigit(ctr.Text[ctr.Text.Length-1]))
             {
-                this.errorProvider1.SetError(ctr, "Đây không phải số hợp lệ");
-            }
-            else
-            {
-                this.errorProvider1.Clear();
+                MessageBox.Show("Đây không phải số hợp lệ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -88,12 +84,25 @@ namespace Bai1
             Control ctr = (Control)sender;
             if (ctr.Text.Length > 0 && !Char.IsDigit(ctr.Text[ctr.Text.Length - 1]))
             {
-                this.errorProvider1.SetError(ctr, "Đây không phải số hợp lệ");
+                MessageBox.Show("Đây không phải số hợp lệ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
-            {
-                this.errorProvider1.Clear();
-            }
+        }
+
+        private void btnChia_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(txtA.Text);
+            int b = int.Parse(txtB.Text);
+            float kq = (float)a / b;
+
+            txtKQ.Text = kq.ToString();
+        }
+
+        private void Bai1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult r;
+            r = MessageBox.Show("Bạn có muốn thoát?", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+            if (r == DialogResult.No)
+                e.Cancel = true;
         }
     }
 }

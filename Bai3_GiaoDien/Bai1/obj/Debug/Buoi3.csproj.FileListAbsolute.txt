@@ -1,0 +1,25 @@
+E:\LuuDuLieuSinhVien\Buoi3_PhanCongHieu_2001215781\Bai3_GiaoDien\Bai1\bin\Debug\Bai1.exe.config
+E:\LuuDuLieuSinhVien\Buoi3_PhanCongHieu_2001215781\Bai3_GiaoDien\Bai1\obj\Debug\Bai1.exe
+E:\LuuDuLieuSinhVien\Buoi3_PhanCongHieu_2001215781\Bai3_GiaoDien\Bai1\obj\Debug\Bai1.pdb
+E:\LuuDuLieuSinhVien\Buoi3_PhanCongHieu_2001215781\Bai3_GiaoDien\Bai1\bin\Debug\Bai1.exe
+E:\LuuDuLieuSinhVien\Buoi3_PhanCongHieu_2001215781\Bai3_GiaoDien\Bai1\bin\Debug\Bai1.pdb
+E:\LuuDuLieuSinhVien\Buoi3_PhanCongHieu_2001215781\Bai3_GiaoDien\Bai1\obj\Debug\Buoi3.Bai1.resources
+E:\LuuDuLieuSinhVien\Buoi3_PhanCongHieu_2001215781\Bai3_GiaoDien\Bai1\obj\Debug\Buoi3.Properties.Resources.resources
+E:\LuuDuLieuSinhVien\Buoi3_PhanCongHieu_2001215781\Bai3_GiaoDien\Bai1\obj\Debug\Buoi3.csproj.GenerateResource.Cache
+E:\LuuDuLieuSinhVien\Buoi3_PhanCongHieu_2001215781\Bai3_GiaoDien\Bai1\obj\Debug\Buoi3.csprojResolveAssemblyReference.cache
+E:\LuuDuLieuSinhVien\Buoi3_PhanCongHieu_2001215781\Bai3_GiaoDien\Bai1\obj\Debug\Buoi3.Bai2.resources
+E:\LuuDuLieuSinhVien\Buoi3_PhanCongHieu_2001215781\Bai3_GiaoDien\Bai1\obj\Debug\Buoi3.Bai3.resources
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Buoi3_PhanCongHieu_2001215781\Bai3_GiaoDien\Bai1\bin\Debug\Bai1.exe.config
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Buoi3_PhanCongHieu_2001215781\Bai3_GiaoDien\Bai1\bin\Debug\Bai1.exe
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Buoi3_PhanCongHieu_2001215781\Bai3_GiaoDien\Bai1\bin\Debug\Bai1.pdb
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Buoi3_PhanCongHieu_2001215781\Bai3_GiaoDien\Bai1\obj\Debug\Buoi3.csproj.AssemblyReference.cache
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Buoi3_PhanCongHieu_2001215781\Bai3_GiaoDien\Bai1\obj\Debug\Buoi3.csproj.SuggestedBindingRedirects.cache
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Buoi3_PhanCongHieu_2001215781\Bai3_GiaoDien\Bai1\obj\Debug\Buoi3.Bai1.resources
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Buoi3_PhanCongHieu_2001215781\Bai3_GiaoDien\Bai1\obj\Debug\Buoi3.Bai2.resources
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Buoi3_PhanCongHieu_2001215781\Bai3_GiaoDien\Bai1\obj\Debug\Buoi3.Bai3.resources
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Buoi3_PhanCongHieu_2001215781\Bai3_GiaoDien\Bai1\obj\Debug\Buoi3.Bai4.resources
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Buoi3_PhanCongHieu_2001215781\Bai3_GiaoDien\Bai1\obj\Debug\Buoi3.Properties.Resources.resources
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Buoi3_PhanCongHieu_2001215781\Bai3_GiaoDien\Bai1\obj\Debug\Buoi3.csproj.GenerateResource.cache
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Buoi3_PhanCongHieu_2001215781\Bai3_GiaoDien\Bai1\obj\Debug\Buoi3.csproj.CoreCompileInputs.cache
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Buoi3_PhanCongHieu_2001215781\Bai3_GiaoDien\Bai1\obj\Debug\Bai1.exe
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Buoi3_PhanCongHieu_2001215781\Bai3_GiaoDien\Bai1\obj\Debug\Bai1.pdb

@@ -1,4 +1,4 @@
-﻿namespace Bai1
+﻿namespace Buoi3
 {
     partial class Bai1
     {
@@ -140,6 +140,7 @@
             this.btnChia.TabIndex = 9;
             this.btnChia.Text = "/";
             this.btnChia.UseVisualStyleBackColor = true;
+            this.btnChia.Click += new System.EventHandler(this.btnChia_Click);
             // 
             // errorProvider1
             // 
@@ -162,7 +163,7 @@
             this.Controls.Add(this.lbA);
             this.Name = "Bai1";
             this.Text = "Cộng trừ nhân chia";
-            this.Leave += new System.EventHandler(this.btnTru_Click);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Bai1_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
