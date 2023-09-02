@@ -42,6 +42,9 @@
             this.btnInput = new System.Windows.Forms.Button();
             this.btnContinue = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnSum = new System.Windows.Forms.Button();
+            this.btnSumEven = new System.Windows.Forms.Button();
+            this.btnSumOdd = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbTitle
@@ -148,10 +151,11 @@
             this.btnInput.TabIndex = 11;
             this.btnInput.Text = "Nhập";
             this.btnInput.UseVisualStyleBackColor = true;
+            this.btnInput.Click += new System.EventHandler(this.btnInput_Click);
             // 
             // btnContinue
             // 
-            this.btnContinue.Location = new System.Drawing.Point(141, 258);
+            this.btnContinue.Location = new System.Drawing.Point(138, 327);
             this.btnContinue.Name = "btnContinue";
             this.btnContinue.Size = new System.Drawing.Size(103, 44);
             this.btnContinue.TabIndex = 12;
@@ -161,18 +165,52 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(329, 258);
+            this.btnExit.Location = new System.Drawing.Point(326, 327);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(103, 44);
             this.btnExit.TabIndex = 13;
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = true;
             // 
+            // btnSum
+            // 
+            this.btnSum.Location = new System.Drawing.Point(63, 267);
+            this.btnSum.Name = "btnSum";
+            this.btnSum.Size = new System.Drawing.Size(103, 44);
+            this.btnSum.TabIndex = 14;
+            this.btnSum.Text = "Tổng";
+            this.btnSum.UseMnemonic = false;
+            this.btnSum.UseVisualStyleBackColor = true;
+            this.btnSum.Click += new System.EventHandler(this.btnSum_Click);
+            // 
+            // btnSumEven
+            // 
+            this.btnSumEven.Location = new System.Drawing.Point(239, 267);
+            this.btnSumEven.Name = "btnSumEven";
+            this.btnSumEven.Size = new System.Drawing.Size(103, 44);
+            this.btnSumEven.TabIndex = 15;
+            this.btnSumEven.Text = "Tổng Chẵn";
+            this.btnSumEven.UseMnemonic = false;
+            this.btnSumEven.UseVisualStyleBackColor = true;
+            // 
+            // btnSumOdd
+            // 
+            this.btnSumOdd.Location = new System.Drawing.Point(411, 267);
+            this.btnSumOdd.Name = "btnSumOdd";
+            this.btnSumOdd.Size = new System.Drawing.Size(103, 44);
+            this.btnSumOdd.TabIndex = 16;
+            this.btnSumOdd.Text = "Tổng Lẻ";
+            this.btnSumOdd.UseMnemonic = false;
+            this.btnSumOdd.UseVisualStyleBackColor = true;
+            // 
             // Bai4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(565, 321);
+            this.ClientSize = new System.Drawing.Size(565, 383);
+            this.Controls.Add(this.btnSumOdd);
+            this.Controls.Add(this.btnSumEven);
+            this.Controls.Add(this.btnSum);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnContinue);
             this.Controls.Add(this.btnInput);
@@ -211,5 +249,8 @@
         private System.Windows.Forms.Button btnInput;
         private System.Windows.Forms.Button btnContinue;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnSum;
+        private System.Windows.Forms.Button btnSumEven;
+        private System.Windows.Forms.Button btnSumOdd;
     }
 }
