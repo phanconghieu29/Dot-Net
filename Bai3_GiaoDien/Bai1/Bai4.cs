@@ -17,19 +17,19 @@ namespace Buoi3
             InitializeComponent();
         }
 
-        List<int> a = new List<int>();
+        int[] a;
 
         private void btnInput_Click(object sender, EventArgs e)
         {
             string[] mangChuoi = txtInput.Text.Split(' ');
-            List<int> a = new List<int>();
+            a = new int[mangChuoi.Length];
 
             for(int i =0; i < mangChuoi.Length; i++)
             {
                 if (int.TryParse(mangChuoi[i], out int result))
                 {
-                    a.Add(result);
-                } 
+                    a[i] = result;
+                }
             }
 
             txtOutput.Text = string.Join(" ", a);
@@ -39,6 +39,18 @@ namespace Buoi3
         {
             int tong = a.Sum();
             txtSum.Text = tong.ToString();
+        }
+
+        private void btnSumEven_Click(object sender, EventArgs e)
+        {
+            int tong = a.Where(a => a % 2 == 0).Sum();
+            txtSumEven.Text = tong.ToString();
+        }
+
+        private void btnSumOdd_Click(object sender, EventArgs e)
+        {
+            int tong = a.Where(a => a % 2 == 1).Sum();
+            txtSumOdd.Text = tong.ToString();
         }
     }
 }

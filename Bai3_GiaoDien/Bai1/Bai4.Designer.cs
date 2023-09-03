@@ -192,6 +192,7 @@
             this.btnSumEven.Text = "Tổng Chẵn";
             this.btnSumEven.UseMnemonic = false;
             this.btnSumEven.UseVisualStyleBackColor = true;
+            this.btnSumEven.Click += new System.EventHandler(this.btnSumEven_Click);
             // 
             // btnSumOdd
             // 
@@ -202,6 +203,7 @@
             this.btnSumOdd.Text = "Tổng Lẻ";
             this.btnSumOdd.UseMnemonic = false;
             this.btnSumOdd.UseVisualStyleBackColor = true;
+            this.btnSumOdd.Click += new System.EventHandler(this.btnSumOdd_Click);
             // 
             // Bai4
             // 
