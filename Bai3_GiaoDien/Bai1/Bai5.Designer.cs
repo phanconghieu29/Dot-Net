@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtInput = new System.Windows.Forms.TextBox();
             this.lbTitle = new System.Windows.Forms.Label();
             this.lbInput = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtOutput = new System.Windows.Forms.TextBox();
             this.btnThucHien = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtInput
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(282, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(133, 32);
-            this.textBox1.TabIndex = 0;
+            this.txtInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInput.Location = new System.Drawing.Point(282, 70);
+            this.txtInput.Name = "txtInput";
+            this.txtInput.Size = new System.Drawing.Size(133, 32);
+            this.txtInput.TabIndex = 0;
             // 
             // lbTitle
             // 
@@ -65,13 +65,13 @@
             this.lbInput.TabIndex = 2;
             this.lbInput.Text = "Nhập dãy số: (từ 1 -> 999)";
             // 
-            // textBox2
+            // txtOutput
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(17, 179);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(398, 32);
-            this.textBox2.TabIndex = 3;
+            this.txtOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOutput.Location = new System.Drawing.Point(17, 179);
+            this.txtOutput.Name = "txtOutput";
+            this.txtOutput.Size = new System.Drawing.Size(398, 32);
+            this.txtOutput.TabIndex = 3;
             // 
             // btnThucHien
             // 
@@ -82,6 +82,7 @@
             this.btnThucHien.TabIndex = 4;
             this.btnThucHien.Text = "Thực Hiện";
             this.btnThucHien.UseVisualStyleBackColor = true;
+            this.btnThucHien.Click += new System.EventHandler(this.btnThucHien_Click);
             // 
             // btnXoa
             // 
@@ -113,10 +114,10 @@
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnThucHien);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtOutput);
             this.Controls.Add(this.lbInput);
             this.Controls.Add(this.lbTitle);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtInput);
             this.Name = "Bai5";
             this.Text = "Bai5";
             this.ResumeLayout(false);
@@ -126,10 +127,10 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtInput;
         private System.Windows.Forms.Label lbTitle;
         private System.Windows.Forms.Label lbInput;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtOutput;
         private System.Windows.Forms.Button btnThucHien;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnThoat;

@@ -36,5 +36,11 @@ namespace Buoi3
                 }
             }
         }
+
+        private void btnThucHien_Click(object sender, EventArgs e)
+        {
+            int x = int.Parse(txtInput.Text);
+
+        }
     }
 }
