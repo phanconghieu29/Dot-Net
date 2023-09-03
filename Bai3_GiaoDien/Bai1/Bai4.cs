@@ -52,5 +52,16 @@ namespace Buoi3
             int tong = a.Where(a => a % 2 == 1).Sum();
             txtSumOdd.Text = tong.ToString();
         }
+
+        private void btnContinue_Click(object sender, EventArgs e)
+        {
+            foreach(Control ctr in this.Controls)
+            {
+                if(ctr is TextBox)
+                {
+                    ctr.Text = "";
+                }
+            }    
+        }
     }
 }

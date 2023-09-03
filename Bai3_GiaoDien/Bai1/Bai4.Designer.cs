@@ -162,6 +162,7 @@
             this.btnContinue.Text = "Tiếp Tục";
             this.btnContinue.UseMnemonic = false;
             this.btnContinue.UseVisualStyleBackColor = true;
+            this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
             // 
             // btnExit
             // 
