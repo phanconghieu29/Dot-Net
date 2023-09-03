@@ -16,5 +16,25 @@ namespace Buoi3
         {
             InitializeComponent();
         }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            DialogResult r = MessageBox.Show("Bạn có muốn thoát?", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(r == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            foreach(Control c in this.Controls)
+            {
+                if(c is TextBox)
+                {
+                    c.Text = "";
+                }
+            }
+        }
     }
 }

@@ -37,3 +37,4 @@ E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Bai3_GiaoDien\Bai1\obj\Deb
 E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Bai3_GiaoDien\Bai1\bin\Debug\Bai1.exe.config
 E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Bai3_GiaoDien\Bai1\bin\Debug\Bai1.exe
 E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Bai3_GiaoDien\Bai1\bin\Debug\Bai1.pdb
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Bai3_GiaoDien\Bai1\obj\Debug\Buoi3.Bai5.resources
