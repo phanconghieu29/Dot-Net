@@ -63,5 +63,14 @@ namespace Buoi3
                 }
             }    
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            DialogResult r =  MessageBox.Show("Bạn có muốn thoát không?", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(r == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
     }
 }
