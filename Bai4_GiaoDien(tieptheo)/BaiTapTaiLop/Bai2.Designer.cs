@@ -68,24 +68,27 @@
             this.txtSumOdd = new System.Windows.Forms.TextBox();
             this.btnSum = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSearchMaxMin = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtMin_Output = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtMax_Output = new System.Windows.Forms.TextBox();
+            this.gbReplace = new System.Windows.Forms.GroupBox();
+            this.txtReplaceIndex_Input = new System.Windows.Forms.TextBox();
+            this.rdoReplaceIndex = new System.Windows.Forms.RadioButton();
+            this.rdoRepaceValue = new System.Windows.Forms.RadioButton();
+            this.txtRepaceValue_Input = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.gbSort.SuspendLayout();
             this.gbSearch.SuspendLayout();
             this.gbDelete.SuspendLayout();
             this.gbAdd.SuspendLayout();
             this.gbSum.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.gbReplace.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbTitle
@@ -501,11 +504,11 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnSearchMaxMin);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtMin_Output);
             this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtMax_Output);
             this.groupBox1.Location = new System.Drawing.Point(36, 468);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
@@ -515,124 +518,155 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Max - Min";
             // 
-            // button1
+            // btnSearchMaxMin
             // 
-            this.button1.Location = new System.Drawing.Point(175, 22);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(57, 82);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Tổng";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSearchMaxMin.Location = new System.Drawing.Point(175, 31);
+            this.btnSearchMaxMin.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSearchMaxMin.Name = "btnSearchMaxMin";
+            this.btnSearchMaxMin.Size = new System.Drawing.Size(57, 66);
+            this.btnSearchMaxMin.TabIndex = 11;
+            this.btnSearchMaxMin.Text = "Tìm";
+            this.btnSearchMaxMin.UseVisualStyleBackColor = true;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label11.Location = new System.Drawing.Point(22, 55);
+            this.label11.Location = new System.Drawing.Point(22, 69);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(71, 16);
+            this.label11.Size = new System.Drawing.Size(94, 16);
             this.label11.TabIndex = 7;
-            this.label11.Text = "Tổng chẵn";
+            this.label11.Text = "Giá trị nhỏ nhất";
             // 
-            // textBox2
+            // txtMin_Output
             // 
-            this.textBox2.Location = new System.Drawing.Point(105, 52);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(45, 22);
-            this.textBox2.TabIndex = 6;
+            this.txtMin_Output.Location = new System.Drawing.Point(119, 66);
+            this.txtMin_Output.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMin_Output.Name = "txtMin_Output";
+            this.txtMin_Output.Size = new System.Drawing.Size(45, 22);
+            this.txtMin_Output.TabIndex = 6;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label12.Location = new System.Drawing.Point(22, 25);
+            this.label12.Location = new System.Drawing.Point(22, 39);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(76, 16);
+            this.label12.Size = new System.Drawing.Size(90, 16);
             this.label12.TabIndex = 5;
-            this.label12.Text = "Tổng mảng";
+            this.label12.Text = "Giá trị lớn nhất";
             // 
-            // textBox3
+            // txtMax_Output
             // 
-            this.textBox3.Location = new System.Drawing.Point(105, 22);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(45, 22);
-            this.textBox3.TabIndex = 3;
+            this.txtMax_Output.Location = new System.Drawing.Point(119, 36);
+            this.txtMax_Output.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMax_Output.Name = "txtMax_Output";
+            this.txtMax_Output.Size = new System.Drawing.Size(45, 22);
+            this.txtMax_Output.TabIndex = 3;
             // 
-            // groupBox2
+            // gbReplace
             // 
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.radioButton1);
-            this.groupBox2.Controls.Add(this.radioButton2);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Location = new System.Drawing.Point(296, 468);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(252, 147);
-            this.groupBox2.TabIndex = 10;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Xóa";
+            this.gbReplace.Controls.Add(this.label10);
+            this.gbReplace.Controls.Add(this.textBox1);
+            this.gbReplace.Controls.Add(this.txtReplaceIndex_Input);
+            this.gbReplace.Controls.Add(this.rdoReplaceIndex);
+            this.gbReplace.Controls.Add(this.rdoRepaceValue);
+            this.gbReplace.Controls.Add(this.txtRepaceValue_Input);
+            this.gbReplace.Location = new System.Drawing.Point(296, 468);
+            this.gbReplace.Margin = new System.Windows.Forms.Padding(4);
+            this.gbReplace.Name = "gbReplace";
+            this.gbReplace.Padding = new System.Windows.Forms.Padding(4);
+            this.gbReplace.Size = new System.Drawing.Size(252, 125);
+            this.gbReplace.TabIndex = 10;
+            this.gbReplace.TabStop = false;
+            this.gbReplace.Text = "Thay Thế";
+            // 
+            // txtReplaceIndex_Input
+            // 
+            this.txtReplaceIndex_Input.Location = new System.Drawing.Point(187, 56);
+            this.txtReplaceIndex_Input.Margin = new System.Windows.Forms.Padding(4);
+            this.txtReplaceIndex_Input.Name = "txtReplaceIndex_Input";
+            this.txtReplaceIndex_Input.Size = new System.Drawing.Size(45, 22);
+            this.txtReplaceIndex_Input.TabIndex = 7;
+            // 
+            // rdoReplaceIndex
+            // 
+            this.rdoReplaceIndex.AutoSize = true;
+            this.rdoReplaceIndex.Location = new System.Drawing.Point(37, 54);
+            this.rdoReplaceIndex.Margin = new System.Windows.Forms.Padding(4);
+            this.rdoReplaceIndex.Name = "rdoReplaceIndex";
+            this.rdoReplaceIndex.Size = new System.Drawing.Size(127, 20);
+            this.rdoReplaceIndex.TabIndex = 6;
+            this.rdoReplaceIndex.TabStop = true;
+            this.rdoReplaceIndex.Text = "Vị trí cần thay thế";
+            this.rdoReplaceIndex.UseVisualStyleBackColor = true;
+            // 
+            // rdoRepaceValue
+            // 
+            this.rdoRepaceValue.AutoSize = true;
+            this.rdoRepaceValue.Location = new System.Drawing.Point(37, 23);
+            this.rdoRepaceValue.Margin = new System.Windows.Forms.Padding(4);
+            this.rdoRepaceValue.Name = "rdoRepaceValue";
+            this.rdoRepaceValue.Size = new System.Drawing.Size(136, 20);
+            this.rdoRepaceValue.TabIndex = 5;
+            this.rdoRepaceValue.TabStop = true;
+            this.rdoRepaceValue.Text = "Giá trị cần thay thế";
+            this.rdoRepaceValue.UseVisualStyleBackColor = true;
+            // 
+            // txtRepaceValue_Input
+            // 
+            this.txtRepaceValue_Input.Location = new System.Drawing.Point(187, 23);
+            this.txtRepaceValue_Input.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRepaceValue_Input.Name = "txtRepaceValue_Input";
+            this.txtRepaceValue_Input.Size = new System.Drawing.Size(45, 22);
+            this.txtRepaceValue_Input.TabIndex = 5;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label10.Location = new System.Drawing.Point(80, 87);
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label10.Location = new System.Drawing.Point(62, 89);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(111, 16);
-            this.label10.TabIndex = 7;
-            this.label10.Text = "Cần sắp xếp tăng";
+            this.label10.Size = new System.Drawing.Size(87, 16);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "Số thay thế là";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(187, 56);
+            this.textBox1.Location = new System.Drawing.Point(187, 86);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(45, 22);
-            this.textBox1.TabIndex = 7;
+            this.textBox1.TabIndex = 8;
             // 
-            // radioButton1
+            // btnReset
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(37, 54);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(103, 20);
-            this.radioButton1.TabIndex = 6;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Vị trí cần xóa";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.btnReset.Location = new System.Drawing.Point(188, 613);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(100, 43);
+            this.btnReset.TabIndex = 13;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // btnExit
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(37, 23);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(112, 20);
-            this.radioButton2.TabIndex = 5;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Giá trị cần xóa";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(187, 23);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(45, 22);
-            this.textBox4.TabIndex = 5;
+            this.btnExit.Location = new System.Drawing.Point(296, 613);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(100, 43);
+            this.btnExit.TabIndex = 14;
+            this.btnExit.Text = "Thoát";
+            this.btnExit.UseVisualStyleBackColor = true;
             // 
             // Bai2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(576, 737);
-            this.Controls.Add(this.groupBox2);
+            this.ClientSize = new System.Drawing.Size(576, 676);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.gbReplace);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbSum);
             this.Controls.Add(this.gbAdd);
@@ -661,8 +695,8 @@
             this.gbSum.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.gbReplace.ResumeLayout(false);
+            this.gbReplace.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -710,16 +744,19 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtSumArray;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSearchMaxMin;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtMin_Output;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox txtMax_Output;
+        private System.Windows.Forms.GroupBox gbReplace;
+        private System.Windows.Forms.TextBox txtReplaceIndex_Input;
+        private System.Windows.Forms.RadioButton rdoReplaceIndex;
+        private System.Windows.Forms.RadioButton rdoRepaceValue;
+        private System.Windows.Forms.TextBox txtRepaceValue_Input;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btnExit;
     }
 }
