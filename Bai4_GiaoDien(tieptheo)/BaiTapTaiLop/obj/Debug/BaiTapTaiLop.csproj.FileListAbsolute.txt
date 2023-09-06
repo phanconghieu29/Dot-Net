@@ -7,3 +7,15 @@ E:\LuuDuLieuSinhVien\Dot-Net\Bai4_GiaoDien(tieptheo)\BaiTapTaiLop\obj\Debug\BaiT
 E:\LuuDuLieuSinhVien\Dot-Net\Bai4_GiaoDien(tieptheo)\BaiTapTaiLop\obj\Debug\BaiTapTaiLop.csproj.GenerateResource.Cache
 E:\LuuDuLieuSinhVien\Dot-Net\Bai4_GiaoDien(tieptheo)\BaiTapTaiLop\obj\Debug\BaiTapTaiLop.exe
 E:\LuuDuLieuSinhVien\Dot-Net\Bai4_GiaoDien(tieptheo)\BaiTapTaiLop\obj\Debug\BaiTapTaiLop.pdb
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Bai4_GiaoDien(tieptheo)\BaiTapTaiLop\bin\Debug\BaiTapTaiLop.exe.config
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Bai4_GiaoDien(tieptheo)\BaiTapTaiLop\bin\Debug\BaiTapTaiLop.exe
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Bai4_GiaoDien(tieptheo)\BaiTapTaiLop\bin\Debug\BaiTapTaiLop.pdb
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Bai4_GiaoDien(tieptheo)\BaiTapTaiLop\obj\Debug\BaiTapTaiLop.csproj.AssemblyReference.cache
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Bai4_GiaoDien(tieptheo)\BaiTapTaiLop\obj\Debug\BaiTapTaiLop.csproj.SuggestedBindingRedirects.cache
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Bai4_GiaoDien(tieptheo)\BaiTapTaiLop\obj\Debug\BaiTapTaiLop.Bai1.resources
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Bai4_GiaoDien(tieptheo)\BaiTapTaiLop\obj\Debug\BaiTapTaiLop.Bai2.resources
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Bai4_GiaoDien(tieptheo)\BaiTapTaiLop\obj\Debug\BaiTapTaiLop.Properties.Resources.resources
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Bai4_GiaoDien(tieptheo)\BaiTapTaiLop\obj\Debug\BaiTapTaiLop.csproj.GenerateResource.cache
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Bai4_GiaoDien(tieptheo)\BaiTapTaiLop\obj\Debug\BaiTapTaiLop.csproj.CoreCompileInputs.cache
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Bai4_GiaoDien(tieptheo)\BaiTapTaiLop\obj\Debug\BaiTapTaiLop.exe
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Bai4_GiaoDien(tieptheo)\BaiTapTaiLop\obj\Debug\BaiTapTaiLop.pdb
