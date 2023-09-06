@@ -1,0 +1,9 @@
+E:\LuuDuLieuSinhVien\Dot-Net\Bai4_GiaoDien(tieptheo)\BaiTapTaiLop\bin\Debug\BaiTapTaiLop.exe.config
+E:\LuuDuLieuSinhVien\Dot-Net\Bai4_GiaoDien(tieptheo)\BaiTapTaiLop\bin\Debug\BaiTapTaiLop.exe
+E:\LuuDuLieuSinhVien\Dot-Net\Bai4_GiaoDien(tieptheo)\BaiTapTaiLop\bin\Debug\BaiTapTaiLop.pdb
+E:\LuuDuLieuSinhVien\Dot-Net\Bai4_GiaoDien(tieptheo)\BaiTapTaiLop\obj\Debug\BaiTapTaiLop.csprojResolveAssemblyReference.cache
+E:\LuuDuLieuSinhVien\Dot-Net\Bai4_GiaoDien(tieptheo)\BaiTapTaiLop\obj\Debug\BaiTapTaiLop.Bai1.resources
+E:\LuuDuLieuSinhVien\Dot-Net\Bai4_GiaoDien(tieptheo)\BaiTapTaiLop\obj\Debug\BaiTapTaiLop.Properties.Resources.resources
+E:\LuuDuLieuSinhVien\Dot-Net\Bai4_GiaoDien(tieptheo)\BaiTapTaiLop\obj\Debug\BaiTapTaiLop.csproj.GenerateResource.Cache
+E:\LuuDuLieuSinhVien\Dot-Net\Bai4_GiaoDien(tieptheo)\BaiTapTaiLop\obj\Debug\BaiTapTaiLop.exe
+E:\LuuDuLieuSinhVien\Dot-Net\Bai4_GiaoDien(tieptheo)\BaiTapTaiLop\obj\Debug\BaiTapTaiLop.pdb
