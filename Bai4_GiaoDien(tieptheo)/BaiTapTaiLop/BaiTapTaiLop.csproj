@@ -57,6 +57,7 @@
     <Compile Include="Bai2.Designer.cs">
       <DependentUpon>Bai2.cs</DependentUpon>
     </Compile>
+    <Compile Include="MangSoNguyen.cs" />
     <Compile Include="PhuongTrinhBacHai.cs" />
     <Compile Include="PhuongTrinhBacNhat.cs" />
     <Compile Include="Program.cs" />

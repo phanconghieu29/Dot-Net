@@ -39,7 +39,10 @@ namespace BaiTapTaiLop
 
         private void btnInput_Click(object sender, EventArgs e)
         {
-
+            String s = txtInput.Text;
+            MangSoNguyen msn = new MangSoNguyen();
+            msn.ChuyenChuoiSangMang(s);
+            txtOutput.Text = msn.XuatChuoiSN();
         }
     }
 }
