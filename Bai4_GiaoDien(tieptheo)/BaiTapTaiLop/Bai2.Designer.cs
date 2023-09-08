@@ -147,6 +147,7 @@
             this.btnInput.TabIndex = 5;
             this.btnInput.Text = "Nhập";
             this.btnInput.UseVisualStyleBackColor = true;
+            this.btnInput.Click += new System.EventHandler(this.btnInput_Click);
             // 
             // gbSort
             // 

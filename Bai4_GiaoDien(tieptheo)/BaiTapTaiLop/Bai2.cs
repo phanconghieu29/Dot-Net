@@ -36,5 +36,10 @@ namespace BaiTapTaiLop
                 this.Close();
             }
         }
+
+        private void btnInput_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
