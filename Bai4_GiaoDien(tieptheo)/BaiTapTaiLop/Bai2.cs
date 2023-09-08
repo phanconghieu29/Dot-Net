@@ -16,5 +16,16 @@ namespace BaiTapTaiLop
         {
             InitializeComponent();
         }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            foreach(Control ctr in this.Controls)
+            {
+                if(ctr is TextBox)
+                {
+                    ctr.Text = "";
+                }
+            }
+        }
     }
 }
