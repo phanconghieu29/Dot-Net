@@ -195,6 +195,7 @@
             this.btnThucHien.TabIndex = 7;
             this.btnThucHien.Text = "Thực Hiện";
             this.btnThucHien.UseVisualStyleBackColor = true;
+            this.btnThucHien.Click += new System.EventHandler(this.btnThucHien_Click);
             // 
             // gbSearch
             // 

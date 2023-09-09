@@ -12,6 +12,7 @@ namespace BaiTapTaiLop
 {
     public partial class Bai2 : Form
     {
+        MangSoNguyen msn = new MangSoNguyen();
         public Bai2()
         {
             InitializeComponent();
@@ -40,9 +41,22 @@ namespace BaiTapTaiLop
         private void btnInput_Click(object sender, EventArgs e)
         {
             String s = txtInput.Text;
-            MangSoNguyen msn = new MangSoNguyen();
             msn.ChuyenChuoiSangMang(s);
             txtOutput.Text = msn.XuatChuoiSN();
+        }
+
+        private void btnThucHien_Click(object sender, EventArgs e)
+        {
+            if(rdo_SortInc.Checked == true)
+            {
+                List<int> l = msn.SapXepTang();
+                txtOutput.Text = msn.XuatChuoiSN(l);
+            }
+            else if(rdo_SortDec.Checked == true)
+            {
+                List<int> l = msn.SapXepGiam();
+                txtOutput.Text = msn.XuatChuoiSN(l);
+            }
         }
     }
 }

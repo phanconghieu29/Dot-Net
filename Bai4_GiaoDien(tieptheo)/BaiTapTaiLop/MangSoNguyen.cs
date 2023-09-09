@@ -31,5 +31,25 @@ namespace BaiTapTaiLop
             }
             return stringOut;
         }
+
+        public String XuatChuoiSN(List<int> l)
+        {
+            String stringOut = "";
+            foreach (int item in l)
+            {
+                stringOut += item.ToString() + " ";
+            }
+            return stringOut;
+        }
+
+        public List<int> SapXepTang()
+        {
+            return a.OrderBy(x => x).ToList();
+        }
+
+        public List<int> SapXepGiam()
+        {
+            return a.OrderByDescending(x => x).ToList();
+        }
     }
 }
