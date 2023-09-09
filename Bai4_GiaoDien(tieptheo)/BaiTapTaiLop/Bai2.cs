@@ -57,6 +57,19 @@ namespace BaiTapTaiLop
                 List<int> l = msn.SapXepGiam();
                 txtOutput.Text = msn.XuatChuoiSN(l);
             }
+            if(rdo_SeachValue.Checked == true)
+            {
+                int x = int.Parse(txtSearchValue_Input.Text);
+                int vt = msn.TimGiaTriXTrongMang(x);
+                if(vt == -1)
+                {
+                    MessageBox.Show("Giá trị vừa nhập không có trong mảng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    txtSearchValue_Output = vt.ToString();
+                }    
+            }
         }
     }
 }

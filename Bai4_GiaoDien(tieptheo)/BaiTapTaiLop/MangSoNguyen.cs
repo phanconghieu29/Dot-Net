@@ -51,5 +51,14 @@ namespace BaiTapTaiLop
         {
             return a.OrderByDescending(x => x).ToList();
         }
+        public int TimGiaTriXTrongMang(int x)
+        {
+            for(int i = 0; i < a.Count; i++)
+            {
+                if (x == a[i])
+                    return i;
+            }
+            return -1;
+        }
     }
 }
