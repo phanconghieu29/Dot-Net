@@ -70,6 +70,19 @@ namespace BaiTapTaiLop
                     txtSearchValue_Output.Text = vt.ToString();
                 }    
             }
+            else if(rdo_SearchIndex.Checked == true)
+            {
+                int vt = int.Parse(txtSearchIndex_Input.Text);
+                int x = msn.TimGiaTriOViTriX(vt);
+                if (x == -1)
+                {
+                    MessageBox.Show("Vi tri vuot qua do dai cua mang", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    txtSearchIndex_Output.Text = x.ToString();
+                }
+            }
         }
     }
 }

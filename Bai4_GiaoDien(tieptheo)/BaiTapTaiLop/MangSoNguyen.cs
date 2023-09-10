@@ -60,5 +60,14 @@ namespace BaiTapTaiLop
             }
             return -1;
         }
+
+        public int TimGiaTriOViTriX(int vt)
+        {
+            if(vt < a.Count)
+            {
+                return a[vt];
+            }
+            return 1;
+        }
     }
 }
