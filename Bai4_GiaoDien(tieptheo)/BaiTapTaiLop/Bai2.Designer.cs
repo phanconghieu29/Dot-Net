@@ -228,7 +228,7 @@
             // 
             // txtSearchIndex_Output
             // 
-            this.txtSearchIndex_Output.Location = new System.Drawing.Point(187, 111);
+            this.txtSearchIndex_Output.Location = new System.Drawing.Point(199, 111);
             this.txtSearchIndex_Output.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearchIndex_Output.Name = "txtSearchIndex_Output";
             this.txtSearchIndex_Output.Size = new System.Drawing.Size(45, 22);
@@ -238,7 +238,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(12, 56);
+            this.label2.Location = new System.Drawing.Point(5, 54);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(168, 16);
             this.label2.TabIndex = 5;
@@ -246,7 +246,7 @@
             // 
             // txtSearchIndex_Input
             // 
-            this.txtSearchIndex_Input.Location = new System.Drawing.Point(187, 81);
+            this.txtSearchIndex_Input.Location = new System.Drawing.Point(199, 81);
             this.txtSearchIndex_Input.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearchIndex_Input.Name = "txtSearchIndex_Input";
             this.txtSearchIndex_Input.Size = new System.Drawing.Size(45, 22);
@@ -254,7 +254,7 @@
             // 
             // txtSearchValue_Output
             // 
-            this.txtSearchValue_Output.Location = new System.Drawing.Point(187, 51);
+            this.txtSearchValue_Output.Location = new System.Drawing.Point(199, 51);
             this.txtSearchValue_Output.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearchValue_Output.Name = "txtSearchValue_Output";
             this.txtSearchValue_Output.Size = new System.Drawing.Size(45, 22);
@@ -262,7 +262,7 @@
             // 
             // txtSearchValue_Input
             // 
-            this.txtSearchValue_Input.Location = new System.Drawing.Point(187, 21);
+            this.txtSearchValue_Input.Location = new System.Drawing.Point(199, 21);
             this.txtSearchValue_Input.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearchValue_Input.Name = "txtSearchValue_Input";
             this.txtSearchValue_Input.Size = new System.Drawing.Size(45, 22);
@@ -396,7 +396,7 @@
             // 
             // txtAddValueIndex
             // 
-            this.txtAddValueIndex.Location = new System.Drawing.Point(187, 51);
+            this.txtAddValueIndex.Location = new System.Drawing.Point(199, 52);
             this.txtAddValueIndex.Margin = new System.Windows.Forms.Padding(4);
             this.txtAddValueIndex.Name = "txtAddValueIndex";
             this.txtAddValueIndex.Size = new System.Drawing.Size(45, 22);
@@ -404,7 +404,7 @@
             // 
             // txtAddValue_Input
             // 
-            this.txtAddValue_Input.Location = new System.Drawing.Point(187, 21);
+            this.txtAddValue_Input.Location = new System.Drawing.Point(199, 22);
             this.txtAddValue_Input.Margin = new System.Windows.Forms.Padding(4);
             this.txtAddValue_Input.Name = "txtAddValue_Input";
             this.txtAddValue_Input.Size = new System.Drawing.Size(45, 22);

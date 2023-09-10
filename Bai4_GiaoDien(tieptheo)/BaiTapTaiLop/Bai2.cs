@@ -67,7 +67,7 @@ namespace BaiTapTaiLop
                 }
                 else
                 {
-                    txtSearchValue_Output = vt.ToString();
+                    txtSearchValue_Output.Text = vt.ToString();
                 }    
             }
         }
