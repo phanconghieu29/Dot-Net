@@ -69,5 +69,10 @@ namespace BaiTapTaiLop
             }
             return 1;
         }
+
+        public List<int> XoaGiaTri(int x)
+        {
+            return a.Remove(x);
+        }
     }
 }
