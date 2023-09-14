@@ -83,6 +83,12 @@ namespace BaiTapTaiLop
                     txtSearchIndex_Output.Text = x.ToString();
                 }
             }
+            if(rdoDeleteValue.Checked == true)
+            {
+                int x = int.Parse(txtDeleteValue_Input.Text);
+                msn.XoaGiaTriX(x);
+
+            }
         }
     }
 }
