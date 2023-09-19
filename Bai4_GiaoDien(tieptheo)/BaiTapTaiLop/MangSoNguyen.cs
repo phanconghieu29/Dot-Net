@@ -42,6 +42,13 @@ namespace BaiTapTaiLop
             return stringOut;
         }
 
+        public bool IsEmpty()
+        {
+            if (a.Count > 0)
+                return false;
+            return true;
+        }
+
         public List<int> SapXepTang()
         {
             return a.OrderBy(x => x).ToList();
@@ -74,6 +81,16 @@ namespace BaiTapTaiLop
         {
             a.Remove(x);
             return a;
+        }
+
+        public int FindMax()
+        {
+            return a.Max(x => x);
+        }
+
+        public int FindMin()
+        {
+            return a.Min(x => x);
         }
     }
 }

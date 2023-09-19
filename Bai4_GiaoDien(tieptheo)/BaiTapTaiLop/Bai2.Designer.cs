@@ -529,6 +529,7 @@
             this.btnSearchMaxMin.TabIndex = 11;
             this.btnSearchMaxMin.Text = "Tìm";
             this.btnSearchMaxMin.UseVisualStyleBackColor = true;
+            this.btnSearchMaxMin.Click += new System.EventHandler(this.btnSearchMaxMin_Click);
             // 
             // label11
             // 

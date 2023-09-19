@@ -47,47 +47,66 @@ namespace BaiTapTaiLop
 
         private void btnThucHien_Click(object sender, EventArgs e)
         {
-            if(rdo_SortInc.Checked == true)
+            if(msn.IsEmpty() == false)
             {
-                List<int> l = msn.SapXepTang();
-                txtOutput.Text = msn.XuatChuoiSN(l);
-            }
-            else if(rdo_SortDec.Checked == true)
-            {
-                List<int> l = msn.SapXepGiam();
-                txtOutput.Text = msn.XuatChuoiSN(l);
-            }
-            if(rdo_SeachValue.Checked == true)
-            {
-                int x = int.Parse(txtSearchValue_Input.Text);
-                int vt = msn.TimGiaTriXTrongMang(x);
-                if(vt == -1)
+                if(rdo_SortInc.Checked == true)
                 {
-                    MessageBox.Show("Giá trị vừa nhập không có trong mảng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    List<int> l = msn.SapXepTang();
+                    txtOutput.Text = msn.XuatChuoiSN(l);
                 }
-                else
+                else if(rdo_SortDec.Checked == true)
                 {
-                    txtSearchValue_Output.Text = vt.ToString();
-                }    
-            }
-            else if(rdo_SearchIndex.Checked == true)
-            {
-                int vt = int.Parse(txtSearchIndex_Input.Text);
-                int x = msn.TimGiaTriOViTriX(vt);
-                if (x == -1)
-                {
-                    MessageBox.Show("Vi tri vuot qua do dai cua mang", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    List<int> l = msn.SapXepGiam();
+                    txtOutput.Text = msn.XuatChuoiSN(l);
                 }
-                else
+                if(rdo_SeachValue.Checked == true)
                 {
-                    txtSearchIndex_Output.Text = x.ToString();
+                    int x = int.Parse(txtSearchValue_Input.Text);
+                    int vt = msn.TimGiaTriXTrongMang(x);
+                    if(vt == -1)
+                    {
+                        MessageBox.Show("Giá trị vừa nhập không có trong mảng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        txtSearchValue_Output.Text = vt.ToString();
+                    }    
+                }
+                else if(rdo_SearchIndex.Checked == true)
+                {
+                    int vt = int.Parse(txtSearchIndex_Input.Text);
+                    int x = msn.TimGiaTriOViTriX(vt);
+                    if (x == -1)
+                    {
+                        MessageBox.Show("Vi tri vuot qua do dai cua mang", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        txtSearchIndex_Output.Text = x.ToString();
+                    }
+                }
+                if(rdoDeleteValue.Checked == true)
+                {
+                    int x = int.Parse(txtDeleteValue_Input.Text);
+                    msn.XoaGiaTriX(x);
                 }
             }
-            if(rdoDeleteValue.Checked == true)
+            else
             {
-                int x = int.Parse(txtDeleteValue_Input.Text);
-                msn.XoaGiaTriX(x);
+                MessageBox.Show("Chưa nhập mảng!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
+        private void btnSearchMaxMin_Click(object sender, EventArgs e)
+        {
+            if(msn.IsEmpty() == false)
+            {
+                txtMax_Output.Text = msn.FindMax().ToString();
+                txtMin_Output.Text = msn.FindMin().ToString();
+            }
+            else
+            {
+                MessageBox.Show("Chưa nhập mảng!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
