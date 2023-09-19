@@ -82,16 +82,14 @@ namespace BaiTapTaiLop
             return -1;
         }
 
-        public List<int> XoaGiaTriX(int x)
+        public void XoaGiaTriX(int x)
         {
             a.Remove(x);
-            return a;
         }
 
-        public List<int> XoaGiaTriOViTriX(int vt)
+        public void XoaGiaTriOViTriX(int vt)
         {
             a.RemoveAt(vt);
-            return a;
         }
 
         public int FindMax()
@@ -117,6 +115,27 @@ namespace BaiTapTaiLop
         public int TongLe()
         {
             return a.Where(x => x % 2 == 1).Sum(x => x);
+        }
+
+        public void ThemXVaoViTriT(int x, int t)
+        {
+            a.Insert(t, x);
+        }
+
+        public void ThayTheXVaoGiaTriY(int x, int y)
+        {
+            for(int i = 0; i < a.Count; i++)
+            {
+                if (a[i] == y)
+                {
+                    a[i] = x;
+                }
+            }   
+        }
+
+        public void ThayTheXVaoViTriVT(int x, int vt)
+        {
+            a[vt] = x;
         }
     }
 }

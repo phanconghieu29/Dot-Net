@@ -75,7 +75,7 @@
             this.txtMax_Output = new System.Windows.Forms.TextBox();
             this.gbReplace = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtValueReplace = new System.Windows.Forms.TextBox();
             this.txtReplaceIndex_Input = new System.Windows.Forms.TextBox();
             this.rdoReplaceIndex = new System.Windows.Forms.RadioButton();
             this.rdoRepaceValue = new System.Windows.Forms.RadioButton();
@@ -571,7 +571,7 @@
             // gbReplace
             // 
             this.gbReplace.Controls.Add(this.label10);
-            this.gbReplace.Controls.Add(this.textBox1);
+            this.gbReplace.Controls.Add(this.txtValueReplace);
             this.gbReplace.Controls.Add(this.txtReplaceIndex_Input);
             this.gbReplace.Controls.Add(this.rdoReplaceIndex);
             this.gbReplace.Controls.Add(this.rdoRepaceValue);
@@ -595,13 +595,13 @@
             this.label10.TabIndex = 9;
             this.label10.Text = "Số thay thế là";
             // 
-            // textBox1
+            // txtValueReplace
             // 
-            this.textBox1.Location = new System.Drawing.Point(187, 86);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(45, 22);
-            this.textBox1.TabIndex = 8;
+            this.txtValueReplace.Location = new System.Drawing.Point(187, 86);
+            this.txtValueReplace.Margin = new System.Windows.Forms.Padding(4);
+            this.txtValueReplace.Name = "txtValueReplace";
+            this.txtValueReplace.Size = new System.Drawing.Size(45, 22);
+            this.txtValueReplace.TabIndex = 8;
             // 
             // txtReplaceIndex_Input
             // 
@@ -761,7 +761,7 @@
         private System.Windows.Forms.RadioButton rdoRepaceValue;
         private System.Windows.Forms.TextBox txtRepaceValue_Input;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtValueReplace;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnExit;
     }

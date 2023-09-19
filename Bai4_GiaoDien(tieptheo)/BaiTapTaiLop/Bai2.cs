@@ -111,7 +111,28 @@ namespace BaiTapTaiLop
                     int vt = int.Parse(txtDeleteIndex_Input.Text);
                     msn.XoaGiaTriOViTriX(vt);
                     txtOutput.Text = msn.XuatChuoiSN();
-                }    
+                }
+                if(rdoAddValue.Checked == true)
+                {
+                    int x = int.Parse(txtAddValue_Input.Text);
+                    int vt = int.Parse(txtAddValueIndex.Text);
+                    msn.ThemXVaoViTriT(x, vt);
+                    txtOutput.Text = msn.XuatChuoiSN();
+                }
+                if(rdoRepaceValue.Checked == true)
+                {
+                    int x = int.Parse(txtValueReplace.Text);
+                    int y = int.Parse(txtRepaceValue_Input.Text);
+                    msn.ThayTheXVaoGiaTriY(x, y);
+                    txtOutput.Text = msn.XuatChuoiSN();
+                }
+                else if(rdoReplaceIndex.Checked == true)
+                {
+                    int x = int.Parse(txtValueReplace.Text);
+                    int vt = int.Parse(txtReplaceIndex_Input.Text);
+                    msn.ThayTheXVaoViTriVT(x, vt);
+                    txtOutput.Text = msn.XuatChuoiSN();
+                }
             }
             else
             {
