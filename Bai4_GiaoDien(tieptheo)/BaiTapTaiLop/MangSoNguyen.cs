@@ -74,7 +74,7 @@ namespace BaiTapTaiLop
             {
                 return a[vt];
             }
-            return 1;
+            return -1;
         }
 
         public List<int> XoaGiaTriX(int x)

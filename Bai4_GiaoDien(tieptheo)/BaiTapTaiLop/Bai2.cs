@@ -40,9 +40,16 @@ namespace BaiTapTaiLop
 
         private void btnInput_Click(object sender, EventArgs e)
         {
-            String s = txtInput.Text;
-            msn.ChuyenChuoiSangMang(s);
-            txtOutput.Text = msn.XuatChuoiSN();
+            if(msn.IsEmpty() == true)
+            {
+                String s = txtInput.Text;
+                msn.ChuyenChuoiSangMang(s);
+                txtOutput.Text = msn.XuatChuoiSN();
+            }
+            else
+            {
+                MessageBox.Show("Chuỗi đã nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information );
+            }
         }
 
         private void btnThucHien_Click(object sender, EventArgs e)
@@ -88,8 +95,15 @@ namespace BaiTapTaiLop
                 if(rdoDeleteValue.Checked == true)
                 {
                     int x = int.Parse(txtDeleteValue_Input.Text);
-                    msn.XoaGiaTriX(x);
-                    txtOutput.Text = msn.XuatChuoiSN();
+                    if(msn.TimGiaTriXTrongMang(x) != -1)
+                    {
+                        msn.XoaGiaTriX(x);
+                        txtOutput.Text = msn.XuatChuoiSN();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Giá trị vừa nhập không có trong mảng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
             }
             else
