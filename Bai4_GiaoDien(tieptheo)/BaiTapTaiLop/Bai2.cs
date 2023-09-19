@@ -27,6 +27,7 @@ namespace BaiTapTaiLop
                     ctr.Text = "";
                 }
             }
+            msn.XoaMang();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -105,6 +106,12 @@ namespace BaiTapTaiLop
                         MessageBox.Show("Giá trị vừa nhập không có trong mảng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
+                else if(rdoDeleteIndex.Checked == true)
+                {
+                    int vt = int.Parse(txtDeleteIndex_Input.Text);
+                    msn.XoaGiaTriOViTriX(vt);
+                    txtOutput.Text = msn.XuatChuoiSN();
+                }    
             }
             else
             {

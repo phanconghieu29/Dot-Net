@@ -42,6 +42,11 @@ namespace BaiTapTaiLop
             return stringOut;
         }
 
+        public void XoaMang()
+        {
+            a.Clear();
+        }
+
         public bool IsEmpty()
         {
             if (a.Count > 0)
@@ -80,6 +85,12 @@ namespace BaiTapTaiLop
         public List<int> XoaGiaTriX(int x)
         {
             a.Remove(x);
+            return a;
+        }
+
+        public List<int> XoaGiaTriOViTriX(int vt)
+        {
+            a.RemoveAt(vt);
             return a;
         }
 
