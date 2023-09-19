@@ -92,5 +92,20 @@ namespace BaiTapTaiLop
         {
             return a.Min(x => x);
         }
+
+        public int TongMang()
+        {
+            return a.Sum(x => x);
+        }
+
+        public int TongChan()
+        {
+            return a.Where(x => x % 2 == 0).Sum(x => x);
+        }
+
+        public int TongLe()
+        {
+            return a.Where(x => x % 2 == 1).Sum(x => x);
+        }
     }
 }

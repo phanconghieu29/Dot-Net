@@ -89,6 +89,7 @@ namespace BaiTapTaiLop
                 {
                     int x = int.Parse(txtDeleteValue_Input.Text);
                     msn.XoaGiaTriX(x);
+                    txtOutput.Text = msn.XuatChuoiSN();
                 }
             }
             else
@@ -103,6 +104,20 @@ namespace BaiTapTaiLop
             {
                 txtMax_Output.Text = msn.FindMax().ToString();
                 txtMin_Output.Text = msn.FindMin().ToString();
+            }
+            else
+            {
+                MessageBox.Show("Chưa nhập mảng!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnSum_Click(object sender, EventArgs e)
+        {
+            if (msn.IsEmpty() == false)
+            {
+                txtSumArray.Text = msn.TongMang().ToString();
+                txtSumEven.Text = msn.TongChan().ToString();
+                txtSumOdd.Text = msn.TongLe().ToString();
             }
             else
             {

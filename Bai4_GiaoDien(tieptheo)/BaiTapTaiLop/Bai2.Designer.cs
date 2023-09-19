@@ -449,6 +449,7 @@
             this.btnSum.TabIndex = 11;
             this.btnSum.Text = "Tổng";
             this.btnSum.UseVisualStyleBackColor = true;
+            this.btnSum.Click += new System.EventHandler(this.btnSum_Click);
             // 
             // label9
             // 
