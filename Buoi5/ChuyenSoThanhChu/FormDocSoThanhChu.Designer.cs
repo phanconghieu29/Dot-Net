@@ -51,15 +51,15 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(35, 53);
+            this.label2.Location = new System.Drawing.Point(56, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 17);
+            this.label2.Size = new System.Drawing.Size(236, 17);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Nhập dãy số : ";
+            this.label2.Text = "Nhập dãy số (từ 0 => dưới 1000 tỷ): ";
             // 
             // txtInput
             // 
-            this.txtInput.Location = new System.Drawing.Point(141, 53);
+            this.txtInput.Location = new System.Drawing.Point(94, 54);
             this.txtInput.Name = "txtInput";
             this.txtInput.Size = new System.Drawing.Size(156, 20);
             this.txtInput.TabIndex = 2;
@@ -97,15 +97,16 @@
             // txtOutput
             // 
             this.txtOutput.Location = new System.Drawing.Point(38, 134);
+            this.txtOutput.Multiline = true;
             this.txtOutput.Name = "txtOutput";
-            this.txtOutput.Size = new System.Drawing.Size(259, 20);
+            this.txtOutput.Size = new System.Drawing.Size(259, 91);
             this.txtOutput.TabIndex = 6;
             // 
             // FormDocSoThanhChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(347, 176);
+            this.ClientSize = new System.Drawing.Size(344, 237);
             this.Controls.Add(this.txtOutput);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnXoa);

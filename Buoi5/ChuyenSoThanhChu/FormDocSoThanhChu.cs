@@ -39,12 +39,23 @@ namespace ChuyenSoThanhChu
 
         private void btnThucHien_Click(object sender, EventArgs e)
         {
+            int number;
             String num = txtInput.Text;
-            DocSoThanhChu doc = new DocSoThanhChu(num);
-            String kq = doc.Doc3ChuSo();
-            txtOutput.Text = kq;
+            if(num.Length > 12)
+            {
+                MessageBox.Show("Số vừa nhập vượt quá giới hạn!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                String s1, s2;
+                DocSoThanhChu doc = new DocSoThanhChu(num);
+                String kq = doc.ChuyenThanhChu();
+                s1 = kq.Substring(0, 1);
+                s2 = kq.Substring(1);
+                s1 = s1.ToUpper();
+                kq = s1 + s2;
+                txtOutput.Text = kq;
+            }
         }
-
-
     }
 }

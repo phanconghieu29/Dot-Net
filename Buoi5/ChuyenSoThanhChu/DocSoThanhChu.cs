@@ -21,9 +21,37 @@ namespace ChuyenSoThanhChu
             this._n = pN;
         }
 
-        //public String DocChuSo()
+        public String ChuyenThanhChu()
+        {
+            string s1, s2, s3, s4;
+            if (n.Length > 9)
+            {
+                s4 = n.Substring(0, n.Length - 9);
+                s3 = n.Substring(n.Length - 9, 3);
+                s2 = n.Substring(n.Length - 6, 3);
+                s1 = n.Substring(n.Length - 3, 3);
+                return Doc3ChuSo(s4) + " tỷ " + Doc3ChuSo(s3) + " triệu " + Doc3ChuSo(s2) + " nghìn " + Doc3ChuSo(s1);
+            }
+            if (n.Length > 6)
+            {
+                s3 = n.Substring(0, n.Length - 6);
+                s2 = n.Substring(n.Length - 6, 3);
+                s1 = n.Substring(n.Length - 3, 3);
+                return Doc3ChuSo(s3) + " triệu " + Doc3ChuSo(s2) + " nghìn " + Doc3ChuSo(s1);
+            }
+            else if(n.Length > 3)
+            {
+                s2 = n.Substring(0, n.Length - 3);
+                s1 = n.Substring(n.Length - 3, 3);
+                return Doc3ChuSo(s2) + " nghìn " + Doc3ChuSo(s1);
+            }
+            else
+            {
+                return Doc3ChuSo(n);
+            }
+        }
 
-        public String Doc3ChuSo()
+        public String Doc3ChuSo(String n)
         {
             int n1, n2, n3;
             
@@ -44,11 +72,11 @@ namespace ChuyenSoThanhChu
                 {
                     if(n3 == 5)
                     {
-                        return Hang_Chuc(n2) + "Lăm";
+                        return Hang_Chuc(n2) + "lăm";
                     }
                     else if(n2 != 1 && n3 == 1)
                     {
-                        return Hang_Chuc(n2) + "Mốt";
+                        return Hang_Chuc(n2) + "mốt";
                     }
                     else if(n3 == 0)
                     {
@@ -75,11 +103,11 @@ namespace ChuyenSoThanhChu
                     {
                         if (n3 == 5)
                         {
-                            return Hang_Chuc(n2) + "Lăm";
+                            return Hang_Chuc(n2) + "lăm";
                         }
                         else if (n2 != 1 && n3 == 1)
                         {
-                            return Hang_Chuc(n2) + "Mốt";
+                            return Hang_Chuc(n2) + "mốt";
                         }
                         else if (n3 == 0)
                         {
@@ -91,15 +119,19 @@ namespace ChuyenSoThanhChu
                         }
                     }
                 }
+                else if(n2 == 0 && n3 == 0)
+                {
+                    return Hang_Tram(n1);
+                }
                 else
                 {
                     if (n3 == 5 && n2 != 0)
                     {
-                        return Hang_Tram(n1) + Hang_Chuc(n2) + "Lăm";
+                        return Hang_Tram(n1) + Hang_Chuc(n2) + "lăm";
                     }
                     else if (n2 != 1 && n3 == 1 && n2 != 0)
                     {
-                        return Hang_Tram(n1) + Hang_Chuc(n2) + "Mốt";
+                        return Hang_Tram(n1) + Hang_Chuc(n2) + "mốt";
                     }
                     else if (n3 == 0)
                     {
@@ -118,15 +150,23 @@ namespace ChuyenSoThanhChu
                 n3 = int.Parse(n.Substring(n.Length - 1, 1));
                 if (n3 == 5 && n2 != 0)
                 {
-                    return Hang_Tram(n1) + Hang_Chuc(n2) + "Lăm";
+                    return Hang_Tram(n1) + Hang_Chuc(n2) + "lăm";
                 }
                 else if (n2 != 1 && n3 == 1 && n2 != 0)
                 {
-                    return Hang_Tram(n1) + Hang_Chuc(n2) + "Mốt";
+                    return Hang_Tram(n1) + Hang_Chuc(n2) + "mốt";
                 }
                 else if (n3 == 0)
                 {
                     return Hang_Tram(n1) + Hang_Chuc(n2);
+                }
+                else if (n2 == 0 && n3 == 0)
+                {
+                    return Hang_Tram(n1);
+                }
+                else if (n1 == 0 && n2 == 0)
+                {
+                    return " lẻ " + Don_Vi(n3);
                 }
                 else
                 {
@@ -139,16 +179,16 @@ namespace ChuyenSoThanhChu
         {
             switch(n)
             {
-                case 0: return "Không";
-                case 1: return "Một";
-                case 2: return "Hai";
-                case 3: return "Ba";
-                case 4: return "Bốn";
-                case 5: return "Năm";
-                case 6: return "Sáu";
-                case 7: return "Bảy";
-                case 8: return "Tám";
-                default: return "Chín";
+                case 0: return "mhông";
+                case 1: return "một";
+                case 2: return "hai";
+                case 3: return "ba";
+                case 4: return "bốn";
+                case 5: return "năm";
+                case 6: return "sáu";
+                case 7: return "bảy";
+                case 8: return "tám";
+                default: return "chín";
             }
         }
 
@@ -156,16 +196,16 @@ namespace ChuyenSoThanhChu
         {
             switch (n)
             {
-                case 0: return "Linh ";
-                case 1: return "Mười ";
-                case 2: return "Hai Mươi ";
-                case 3: return "Ba Mươi ";
-                case 4: return "Bốn Mươi ";
-                case 5: return "Năm Mươi ";
-                case 6: return "Sáu Mươi ";
-                case 7: return "Bảy Mươi ";
-                case 8: return "Tám Mươi ";
-                default: return "Chín Mươi ";
+                case 0: return "linh ";
+                case 1: return "mười ";
+                case 2: return "hai mươi ";
+                case 3: return "ba mươi ";
+                case 4: return "bốn mươi ";
+                case 5: return "năm mươi ";
+                case 6: return "sáu mươi ";
+                case 7: return "bảy mươi ";
+                case 8: return "tám mươi ";
+                default: return "chín mươi ";
             }
         }
 
@@ -173,16 +213,16 @@ namespace ChuyenSoThanhChu
         {
             switch (n)
             {
-                case 0: return "Không Trăm ";
-                case 1: return "Một Trăm ";
-                case 2: return "Hai Trăm ";
-                case 3: return "Ba Trăm ";
-                case 4: return "Bốn Trăm ";
-                case 5: return "Năm Trăm ";
-                case 6: return "Sáu Trăm ";
-                case 7: return "Bảy Trăm ";
-                case 8: return "Tám Trăm ";
-                default: return "Chín Trăm ";
+                case 0: return "không trăm ";
+                case 1: return "một trăm ";
+                case 2: return "hai trăm ";
+                case 3: return "ba trăm ";
+                case 4: return "bốn trăm ";
+                case 5: return "năm trăm ";
+                case 6: return "sáu trăm ";
+                case 7: return "bảy trăm ";
+                case 8: return "tám trăm ";
+                default: return "chín trăm ";
             }
         }
     }
