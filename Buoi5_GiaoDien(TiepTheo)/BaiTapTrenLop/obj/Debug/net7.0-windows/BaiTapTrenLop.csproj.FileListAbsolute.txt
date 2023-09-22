@@ -1,0 +1,17 @@
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Buoi5_GiaoDien(TiepTheo)\BaiTapTrenLop\obj\Debug\net7.0-windows\BaiTapTrenLop.csproj.AssemblyReference.cache
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Buoi5_GiaoDien(TiepTheo)\BaiTapTrenLop\obj\Debug\net7.0-windows\BaiTapTrenLop.Bai1.resources
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Buoi5_GiaoDien(TiepTheo)\BaiTapTrenLop\obj\Debug\net7.0-windows\BaiTapTrenLop.csproj.GenerateResource.cache
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Buoi5_GiaoDien(TiepTheo)\BaiTapTrenLop\obj\Debug\net7.0-windows\BaiTapTrenLop.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Buoi5_GiaoDien(TiepTheo)\BaiTapTrenLop\obj\Debug\net7.0-windows\BaiTapTrenLop.AssemblyInfoInputs.cache
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Buoi5_GiaoDien(TiepTheo)\BaiTapTrenLop\obj\Debug\net7.0-windows\BaiTapTrenLop.AssemblyInfo.cs
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Buoi5_GiaoDien(TiepTheo)\BaiTapTrenLop\obj\Debug\net7.0-windows\BaiTapTrenLop.csproj.CoreCompileInputs.cache
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Buoi5_GiaoDien(TiepTheo)\BaiTapTrenLop\bin\Debug\net7.0-windows\BaiTapTrenLop.exe
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Buoi5_GiaoDien(TiepTheo)\BaiTapTrenLop\bin\Debug\net7.0-windows\BaiTapTrenLop.deps.json
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Buoi5_GiaoDien(TiepTheo)\BaiTapTrenLop\bin\Debug\net7.0-windows\BaiTapTrenLop.runtimeconfig.json
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Buoi5_GiaoDien(TiepTheo)\BaiTapTrenLop\bin\Debug\net7.0-windows\BaiTapTrenLop.dll
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Buoi5_GiaoDien(TiepTheo)\BaiTapTrenLop\bin\Debug\net7.0-windows\BaiTapTrenLop.pdb
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Buoi5_GiaoDien(TiepTheo)\BaiTapTrenLop\obj\Debug\net7.0-windows\BaiTapTrenLop.dll
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Buoi5_GiaoDien(TiepTheo)\BaiTapTrenLop\obj\Debug\net7.0-windows\refint\BaiTapTrenLop.dll
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Buoi5_GiaoDien(TiepTheo)\BaiTapTrenLop\obj\Debug\net7.0-windows\BaiTapTrenLop.pdb
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Buoi5_GiaoDien(TiepTheo)\BaiTapTrenLop\obj\Debug\net7.0-windows\BaiTapTrenLop.genruntimeconfig.cache
+E:\Tai Lieu Hoc Tap\Hoc Ky 5\Cong Nghe dotNET\Dot-Net\Buoi5_GiaoDien(TiepTheo)\BaiTapTrenLop\obj\Debug\net7.0-windows\ref\BaiTapTrenLop.dll
