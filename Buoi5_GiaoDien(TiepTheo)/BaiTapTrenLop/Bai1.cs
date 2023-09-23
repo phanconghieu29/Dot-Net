@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -37,10 +38,44 @@ namespace BaiTapTrenLop
         {
             lst_Number.Items.Clear();
             int number;
-            if(int.TryParse(cbo_Number.SelectedItem.ToString(), out number))
+            if (int.TryParse(cbo_Number.SelectedItem.ToString(), out number))
             {
-                
+                for (int i = 1; i <= number / 2; i++)
+                {
+                    if (number % i == 0)
+                    {
+                        lst_Number.Items.Add(i);
+                    }
+                }
             }
+        }
+
+        private void btn_Sum_Click(object sender, EventArgs e)
+        {
+            int sum = 0;
+            foreach (int n in lst_Number.Items)
+            {
+                sum += n;
+            }
+            MessageBox.Show("Tổng các ước số: " + sum, "Kết quả", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btn_Count_Even_Click(object sender, EventArgs e)
+        {
+            int count = 0;
+            foreach (int n in lst_Number.Items)
+            {
+                if (n % 2 == 0)
+                {
+                    count++;
+                }
+            }
+            MessageBox.Show("Số lượng các ước số chẵn: " + count, "Kết quả", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btn_Prime_Num_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -101,6 +101,7 @@
             btn_Sum.TabIndex = 6;
             btn_Sum.Text = "Tổng Các Ước Số";
             btn_Sum.UseVisualStyleBackColor = true;
+            btn_Sum.Click += btn_Sum_Click;
             // 
             // btn_Count_Even
             // 
@@ -110,6 +111,7 @@
             btn_Count_Even.TabIndex = 7;
             btn_Count_Even.Text = "Sỗ Lượng Các Ước Số Chẵn";
             btn_Count_Even.UseVisualStyleBackColor = true;
+            btn_Count_Even.Click += btn_Count_Even_Click;
             // 
             // btn_Prime_Num
             // 
@@ -119,6 +121,7 @@
             btn_Prime_Num.TabIndex = 8;
             btn_Prime_Num.Text = "Sỗ Lượng Các Ước Số Nguyên Tố";
             btn_Prime_Num.UseVisualStyleBackColor = true;
+            btn_Prime_Num.Click += btn_Prime_Num_Click;
             // 
             // btn_Exit
             // 
