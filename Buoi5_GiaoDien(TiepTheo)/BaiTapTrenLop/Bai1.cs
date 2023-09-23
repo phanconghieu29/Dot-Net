@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -75,7 +76,25 @@ namespace BaiTapTrenLop
 
         private void btn_Prime_Num_Click(object sender, EventArgs e)
         {
+            int count = 0;
+            foreach(int n in lst_Number.Items)
+            {
+                if (Check_Prime_Number(n))
+                    count++;
+            }
+            MessageBox.Show("Số lượng các ước số nguyên tố: " + count, "Kết quả", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
 
+        private bool Check_Prime_Number(int n)
+        {
+            if(n < 2)
+                return false;
+            for(int i = 2; i <= Math.Sqrt(n); i++)
+            {
+                if(n % i == 0)
+                    return false;
+            }
+            return true;
         }
     }
 }
