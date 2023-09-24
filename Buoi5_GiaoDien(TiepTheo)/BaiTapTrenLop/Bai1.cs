@@ -21,9 +21,26 @@ namespace BaiTapTrenLop
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            cbo_Number.Items.Add(txt_Input.Text);
-            txt_Input.Text = "";
-            txt_Input.Focus();
+            string soNhap = txt_Input.Text.Trim();
+
+            if (!string.IsNullOrEmpty(soNhap) && !cbo_Number.Items.Contains(soNhap))
+            {
+                cbo_Number.Items.Add(soNhap);
+                txt_Input.Text = "";
+                txt_Input.Focus();
+            }
+            else if (cbo_Number.Items.Contains(soNhap))
+            {
+                MessageBox.Show("Số này đã tồn tại trong danh sách!");
+                txt_Input.Text = "";
+                txt_Input.Focus();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập một số hợp lệ!");
+                txt_Input.Text = "";
+                txt_Input.Focus();
+            }
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)
