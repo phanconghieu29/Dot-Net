@@ -28,39 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            treeView1 = new TreeView();
-            comboBox1 = new ComboBox();
+            trv_ListClass = new TreeView();
+            cbo_Select_Class = new ComboBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txt_Student_ID = new TextBox();
+            txt_Name = new TextBox();
             label6 = new Label();
             txt_Address = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            checkBox1 = new CheckBox();
-            textBox3 = new TextBox();
+            btn_Update = new Button();
+            btn_Delete = new Button();
+            ckb_Add_Class = new CheckBox();
+            txt_Class_Name = new TextBox();
             label5 = new Label();
             label7 = new Label();
-            button3 = new Button();
+            btn_Add_Class = new Button();
             SuspendLayout();
             // 
-            // treeView1
+            // trv_ListClass
             // 
-            treeView1.Location = new Point(-1, 0);
-            treeView1.Name = "treeView1";
-            treeView1.Size = new Size(305, 438);
-            treeView1.TabIndex = 0;
+            trv_ListClass.Location = new Point(-1, 0);
+            trv_ListClass.Name = "trv_ListClass";
+            trv_ListClass.Size = new Size(305, 438);
+            trv_ListClass.TabIndex = 0;
             // 
-            // comboBox1
+            // cbo_Select_Class
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(447, 12);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(315, 28);
-            comboBox1.TabIndex = 1;
+            cbo_Select_Class.FormattingEnabled = true;
+            cbo_Select_Class.Location = new Point(447, 12);
+            cbo_Select_Class.Name = "cbo_Select_Class";
+            cbo_Select_Class.Size = new Size(315, 28);
+            cbo_Select_Class.TabIndex = 1;
             // 
             // label1
             // 
@@ -98,19 +98,19 @@
             label4.TabIndex = 5;
             label4.Text = "Họ Tên";
             // 
-            // textBox1
+            // txt_Student_ID
             // 
-            textBox1.Location = new Point(447, 90);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(315, 27);
-            textBox1.TabIndex = 7;
+            txt_Student_ID.Location = new Point(447, 90);
+            txt_Student_ID.Name = "txt_Student_ID";
+            txt_Student_ID.Size = new Size(315, 27);
+            txt_Student_ID.TabIndex = 7;
             // 
-            // textBox2
+            // txt_Name
             // 
-            textBox2.Location = new Point(447, 144);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(315, 27);
-            textBox2.TabIndex = 8;
+            txt_Name.Location = new Point(447, 144);
+            txt_Name.Name = "txt_Name";
+            txt_Name.Size = new Size(315, 27);
+            txt_Name.TabIndex = 8;
             // 
             // label6
             // 
@@ -128,49 +128,49 @@
             txt_Address.Size = new Size(315, 27);
             txt_Address.TabIndex = 11;
             // 
-            // button1
+            // btn_Update
             // 
-            button1.Location = new Point(447, 248);
-            button1.Name = "button1";
-            button1.Size = new Size(161, 29);
-            button1.TabIndex = 12;
-            button1.Text = "Cập Nhật";
-            button1.UseVisualStyleBackColor = true;
+            btn_Update.Location = new Point(447, 248);
+            btn_Update.Name = "btn_Update";
+            btn_Update.Size = new Size(161, 29);
+            btn_Update.TabIndex = 12;
+            btn_Update.Text = "Cập Nhật";
+            btn_Update.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn_Delete
             // 
-            button2.Location = new Point(614, 248);
-            button2.Name = "button2";
-            button2.Size = new Size(148, 29);
-            button2.TabIndex = 13;
-            button2.Text = "Xóa";
-            button2.UseVisualStyleBackColor = true;
+            btn_Delete.Location = new Point(614, 248);
+            btn_Delete.Name = "btn_Delete";
+            btn_Delete.Size = new Size(148, 29);
+            btn_Delete.TabIndex = 13;
+            btn_Delete.Text = "Xóa";
+            btn_Delete.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // ckb_Add_Class
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(325, 295);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(94, 24);
-            checkBox1.TabIndex = 14;
-            checkBox1.Text = "Thêm lớp";
-            checkBox1.UseVisualStyleBackColor = true;
+            ckb_Add_Class.AutoSize = true;
+            ckb_Add_Class.Location = new Point(325, 295);
+            ckb_Add_Class.Name = "ckb_Add_Class";
+            ckb_Add_Class.Size = new Size(94, 24);
+            ckb_Add_Class.TabIndex = 14;
+            ckb_Add_Class.Text = "Thêm lớp";
+            ckb_Add_Class.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // txt_Class_Name
             // 
-            textBox3.Location = new Point(447, 362);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(184, 27);
-            textBox3.TabIndex = 16;
+            txt_Class_Name.Location = new Point(447, 362);
+            txt_Class_Name.Name = "txt_Class_Name";
+            txt_Class_Name.Size = new Size(184, 27);
+            txt_Class_Name.TabIndex = 16;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Location = new Point(362, 365);
             label5.Name = "label5";
-            label5.Size = new Size(57, 20);
+            label5.Size = new Size(61, 20);
             label5.TabIndex = 15;
-            label5.Text = "Địa Chỉ";
+            label5.Text = "Tên Lớp";
             // 
             // label7
             // 
@@ -181,61 +181,61 @@
             label7.TabIndex = 17;
             label7.Text = "Thông Tin Lớp";
             // 
-            // button3
+            // btn_Add_Class
             // 
-            button3.Location = new Point(637, 361);
-            button3.Name = "button3";
-            button3.Size = new Size(125, 29);
-            button3.TabIndex = 18;
-            button3.Text = "Xóa";
-            button3.UseVisualStyleBackColor = true;
+            btn_Add_Class.Location = new Point(637, 361);
+            btn_Add_Class.Name = "btn_Add_Class";
+            btn_Add_Class.Size = new Size(125, 29);
+            btn_Add_Class.TabIndex = 18;
+            btn_Add_Class.Text = "Thêm Lớp";
+            btn_Add_Class.UseVisualStyleBackColor = true;
             // 
             // Bai2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 439);
-            Controls.Add(button3);
+            Controls.Add(btn_Add_Class);
             Controls.Add(label7);
-            Controls.Add(textBox3);
+            Controls.Add(txt_Class_Name);
             Controls.Add(label5);
-            Controls.Add(checkBox1);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(ckb_Add_Class);
+            Controls.Add(btn_Delete);
+            Controls.Add(btn_Update);
             Controls.Add(txt_Address);
             Controls.Add(label6);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txt_Name);
+            Controls.Add(txt_Student_ID);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(comboBox1);
-            Controls.Add(treeView1);
+            Controls.Add(cbo_Select_Class);
+            Controls.Add(trv_ListClass);
             Name = "Bai2";
-            Text = "Bai2";
+            Text = "Quản Lý Sinh Viên";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private TreeView treeView1;
-        private ComboBox comboBox1;
+        private TreeView trv_ListClass;
+        private ComboBox cbo_Select_Class;
         private Label label1;
         private Label label2;
         private Label label3;
         private Label label4;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txt_Student_ID;
+        private TextBox txt_Name;
         private Label label6;
         private TextBox txt_Address;
-        private Button button1;
-        private Button button2;
-        private CheckBox checkBox1;
-        private TextBox textBox3;
+        private Button btn_Update;
+        private Button btn_Delete;
+        private CheckBox ckb_Add_Class;
+        private TextBox txt_Class_Name;
         private Label label5;
         private Label label7;
-        private Button button3;
+        private Button btn_Add_Class;
     }
 }
