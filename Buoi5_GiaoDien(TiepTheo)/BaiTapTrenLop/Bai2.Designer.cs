@@ -31,7 +31,6 @@
             trv_ListClass = new TreeView();
             cbo_Select_Class = new ComboBox();
             label1 = new Label();
-            label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             txt_Student_ID = new TextBox();
@@ -45,7 +44,9 @@
             label5 = new Label();
             btn_Add_Class = new Button();
             gb_Class_Info = new GroupBox();
+            groupBox1 = new GroupBox();
             gb_Class_Info.SuspendLayout();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // trv_ListClass
@@ -58,7 +59,7 @@
             // cbo_Select_Class
             // 
             cbo_Select_Class.FormattingEnabled = true;
-            cbo_Select_Class.Location = new Point(447, 12);
+            cbo_Select_Class.Location = new Point(432, 20);
             cbo_Select_Class.Name = "cbo_Select_Class";
             cbo_Select_Class.Size = new Size(315, 28);
             cbo_Select_Class.TabIndex = 1;
@@ -66,25 +67,16 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(362, 15);
+            label1.Location = new Point(347, 23);
             label1.Name = "label1";
             label1.Size = new Size(72, 20);
             label1.TabIndex = 2;
             label1.Text = "Chọn Lớp";
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(325, 53);
-            label2.Name = "label2";
-            label2.Size = new Size(140, 20);
-            label2.TabIndex = 3;
-            label2.Text = "Thông Tin Sinh Viên";
-            // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(362, 93);
+            label3.Location = new Point(37, 29);
             label3.Name = "label3";
             label3.Size = new Size(51, 20);
             label3.TabIndex = 4;
@@ -93,7 +85,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(362, 147);
+            label4.Location = new Point(37, 83);
             label4.Name = "label4";
             label4.Size = new Size(56, 20);
             label4.TabIndex = 5;
@@ -101,14 +93,14 @@
             // 
             // txt_Student_ID
             // 
-            txt_Student_ID.Location = new Point(447, 90);
+            txt_Student_ID.Location = new Point(122, 26);
             txt_Student_ID.Name = "txt_Student_ID";
             txt_Student_ID.Size = new Size(315, 27);
             txt_Student_ID.TabIndex = 7;
             // 
             // txt_Name
             // 
-            txt_Name.Location = new Point(447, 144);
+            txt_Name.Location = new Point(122, 80);
             txt_Name.Name = "txt_Name";
             txt_Name.Size = new Size(315, 27);
             txt_Name.TabIndex = 8;
@@ -116,7 +108,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(362, 204);
+            label6.Location = new Point(37, 140);
             label6.Name = "label6";
             label6.Size = new Size(57, 20);
             label6.TabIndex = 10;
@@ -124,23 +116,24 @@
             // 
             // txt_Address
             // 
-            txt_Address.Location = new Point(447, 201);
+            txt_Address.Location = new Point(122, 137);
             txt_Address.Name = "txt_Address";
             txt_Address.Size = new Size(315, 27);
             txt_Address.TabIndex = 11;
             // 
             // btn_Update
             // 
-            btn_Update.Location = new Point(447, 248);
+            btn_Update.Location = new Point(122, 184);
             btn_Update.Name = "btn_Update";
             btn_Update.Size = new Size(161, 29);
             btn_Update.TabIndex = 12;
             btn_Update.Text = "Cập Nhật";
             btn_Update.UseVisualStyleBackColor = true;
+            btn_Update.Click += btn_Update_Click;
             // 
             // btn_Delete
             // 
-            btn_Delete.Location = new Point(614, 248);
+            btn_Delete.Location = new Point(289, 184);
             btn_Delete.Name = "btn_Delete";
             btn_Delete.Size = new Size(148, 29);
             btn_Delete.TabIndex = 13;
@@ -150,12 +143,13 @@
             // ckb_Add_Class
             // 
             ckb_Add_Class.AutoSize = true;
-            ckb_Add_Class.Location = new Point(325, 295);
+            ckb_Add_Class.Location = new Point(310, 295);
             ckb_Add_Class.Name = "ckb_Add_Class";
             ckb_Add_Class.Size = new Size(94, 24);
             ckb_Add_Class.TabIndex = 14;
             ckb_Add_Class.Text = "Thêm lớp";
             ckb_Add_Class.UseVisualStyleBackColor = true;
+            ckb_Add_Class.CheckedChanged += ckb_Add_Class_CheckedChanged;
             // 
             // txt_Class_Name
             // 
@@ -181,35 +175,45 @@
             btn_Add_Class.TabIndex = 18;
             btn_Add_Class.Text = "Thêm Lớp";
             btn_Add_Class.UseVisualStyleBackColor = true;
+            btn_Add_Class.Click += btn_Add_Class_Click;
             // 
             // gb_Class_Info
             // 
             gb_Class_Info.Controls.Add(txt_Class_Name);
             gb_Class_Info.Controls.Add(btn_Add_Class);
             gb_Class_Info.Controls.Add(label5);
-            gb_Class_Info.Location = new Point(343, 325);
+            gb_Class_Info.Location = new Point(310, 325);
             gb_Class_Info.Name = "gb_Class_Info";
-            gb_Class_Info.Size = new Size(445, 73);
+            gb_Class_Info.Size = new Size(478, 73);
             gb_Class_Info.TabIndex = 19;
             gb_Class_Info.TabStop = false;
             gb_Class_Info.Text = "Thông Tin Lớp";
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(btn_Delete);
+            groupBox1.Controls.Add(txt_Student_ID);
+            groupBox1.Controls.Add(btn_Update);
+            groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(txt_Address);
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(label6);
+            groupBox1.Controls.Add(txt_Name);
+            groupBox1.Location = new Point(310, 46);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(478, 230);
+            groupBox1.TabIndex = 20;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Thông Tin Lớp";
             // 
             // Bai2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 410);
+            Controls.Add(groupBox1);
             Controls.Add(gb_Class_Info);
             Controls.Add(ckb_Add_Class);
-            Controls.Add(btn_Delete);
-            Controls.Add(btn_Update);
-            Controls.Add(txt_Address);
-            Controls.Add(label6);
-            Controls.Add(txt_Name);
-            Controls.Add(txt_Student_ID);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(cbo_Select_Class);
             Controls.Add(trv_ListClass);
@@ -218,6 +222,8 @@
             Load += Bai2_Load;
             gb_Class_Info.ResumeLayout(false);
             gb_Class_Info.PerformLayout();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -227,7 +233,6 @@
         private TreeView trv_ListClass;
         private ComboBox cbo_Select_Class;
         private Label label1;
-        private Label label2;
         private Label label3;
         private Label label4;
         private TextBox txt_Student_ID;
@@ -241,5 +246,6 @@
         private Label label5;
         private Button btn_Add_Class;
         private GroupBox gb_Class_Info;
+        private GroupBox groupBox1;
     }
 }

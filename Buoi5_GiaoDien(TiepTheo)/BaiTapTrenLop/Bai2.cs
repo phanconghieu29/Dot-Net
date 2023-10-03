@@ -12,6 +12,7 @@ namespace BaiTapTrenLop
 {
     public partial class Bai2 : Form
     {
+        string[] dsLop = new string[] { "12DHTH1", "12DHTH2", "12DHTH3", "12DHTH4" };
         public Bai2()
         {
             InitializeComponent();
@@ -21,7 +22,6 @@ namespace BaiTapTrenLop
         {
             TreeNode root = new TreeNode("Danh sách lớp");
             trv_ListClass.Nodes.Add(root);
-            string[] dsLop = new string[] { "12DHTH1", "12DHTH2", "12DHTH3", "12DHTH4" };
             foreach (string s in dsLop)
             {
                 root.Nodes.Add(s);
@@ -29,6 +29,49 @@ namespace BaiTapTrenLop
             }
             cbo_Select_Class.SelectedIndex = 0;
             gb_Class_Info.Visible = false;
+        }
+
+        private void ckb_Add_Class_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ckb_Add_Class.Checked == true)
+            {
+                gb_Class_Info.Visible = true;
+            }
+            else
+            {
+                gb_Class_Info.Visible = false;
+            }
+        }
+
+        private void btn_Add_Class_Click(object sender, EventArgs e)
+        {
+            string className = txt_Class_Name.Text;
+            if (KT_Ten_Lop(className) == false)
+            {
+                trv_ListClass.Nodes[0].Nodes.Add(className);
+                cbo_Select_Class.Items.Add(className);
+            }
+            else
+            {
+                MessageBox.Show("Tên lớp đã có trong danh sách", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public bool KT_Ten_Lop(string className)
+        {
+            foreach (string s in dsLop)
+            {
+                if (s == className)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private void btn_Update_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
