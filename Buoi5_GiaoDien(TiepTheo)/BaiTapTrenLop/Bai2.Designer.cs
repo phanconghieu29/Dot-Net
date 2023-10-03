@@ -43,15 +43,16 @@
             ckb_Add_Class = new CheckBox();
             txt_Class_Name = new TextBox();
             label5 = new Label();
-            label7 = new Label();
             btn_Add_Class = new Button();
+            gb_Class_Info = new GroupBox();
+            gb_Class_Info.SuspendLayout();
             SuspendLayout();
             // 
             // trv_ListClass
             // 
             trv_ListClass.Location = new Point(-1, 0);
             trv_ListClass.Name = "trv_ListClass";
-            trv_ListClass.Size = new Size(305, 438);
+            trv_ListClass.Size = new Size(305, 408);
             trv_ListClass.TabIndex = 0;
             // 
             // cbo_Select_Class
@@ -158,7 +159,7 @@
             // 
             // txt_Class_Name
             // 
-            txt_Class_Name.Location = new Point(447, 362);
+            txt_Class_Name.Location = new Point(121, 26);
             txt_Class_Name.Name = "txt_Class_Name";
             txt_Class_Name.Size = new Size(184, 27);
             txt_Class_Name.TabIndex = 16;
@@ -166,39 +167,39 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(362, 365);
+            label5.Location = new Point(36, 29);
             label5.Name = "label5";
             label5.Size = new Size(61, 20);
             label5.TabIndex = 15;
             label5.Text = "Tên Lớp";
             // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(325, 331);
-            label7.Name = "label7";
-            label7.Size = new Size(104, 20);
-            label7.TabIndex = 17;
-            label7.Text = "Thông Tin Lớp";
-            // 
             // btn_Add_Class
             // 
-            btn_Add_Class.Location = new Point(637, 361);
+            btn_Add_Class.Location = new Point(311, 25);
             btn_Add_Class.Name = "btn_Add_Class";
             btn_Add_Class.Size = new Size(125, 29);
             btn_Add_Class.TabIndex = 18;
             btn_Add_Class.Text = "Thêm Lớp";
             btn_Add_Class.UseVisualStyleBackColor = true;
             // 
+            // gb_Class_Info
+            // 
+            gb_Class_Info.Controls.Add(txt_Class_Name);
+            gb_Class_Info.Controls.Add(btn_Add_Class);
+            gb_Class_Info.Controls.Add(label5);
+            gb_Class_Info.Location = new Point(343, 325);
+            gb_Class_Info.Name = "gb_Class_Info";
+            gb_Class_Info.Size = new Size(445, 73);
+            gb_Class_Info.TabIndex = 19;
+            gb_Class_Info.TabStop = false;
+            gb_Class_Info.Text = "Thông Tin Lớp";
+            // 
             // Bai2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 439);
-            Controls.Add(btn_Add_Class);
-            Controls.Add(label7);
-            Controls.Add(txt_Class_Name);
-            Controls.Add(label5);
+            ClientSize = new Size(800, 410);
+            Controls.Add(gb_Class_Info);
             Controls.Add(ckb_Add_Class);
             Controls.Add(btn_Delete);
             Controls.Add(btn_Update);
@@ -214,6 +215,9 @@
             Controls.Add(trv_ListClass);
             Name = "Bai2";
             Text = "Quản Lý Sinh Viên";
+            Load += Bai2_Load;
+            gb_Class_Info.ResumeLayout(false);
+            gb_Class_Info.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -235,7 +239,7 @@
         private CheckBox ckb_Add_Class;
         private TextBox txt_Class_Name;
         private Label label5;
-        private Label label7;
         private Button btn_Add_Class;
+        private GroupBox gb_Class_Info;
     }
 }
