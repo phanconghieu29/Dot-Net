@@ -46,14 +46,14 @@ namespace BaiTapTrenLop
         private void btn_Add_Class_Click(object sender, EventArgs e)
         {
             string className = txt_Class_Name.Text;
-            if (KT_Ten_Lop(className) == false)
+            if (KT_Ten_Lop(className) == true || string.IsNullOrWhiteSpace(className) == true)
             {
-                trv_ListClass.Nodes[0].Nodes.Add(className);
-                cbo_Select_Class.Items.Add(className);
+                MessageBox.Show("Tên lớp đã có trong danh sách hoặc rỗng", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                MessageBox.Show("Tên lớp đã có trong danh sách", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                trv_ListClass.Nodes[0].Nodes.Add(className);
+                cbo_Select_Class.Items.Add(className);
             }
         }
 
@@ -71,7 +71,22 @@ namespace BaiTapTrenLop
 
         private void btn_Update_Click(object sender, EventArgs e)
         {
+            string stdInfo = txt_Student_ID.Text + ", " + txt_Name.Text + ", " + txt_Address.Text;
+            if (KT_Nhap_SV() == false)
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                trv_ListClass.Nodes[0].Nodes[cbo_Select_Class.SelectedIndex].Nodes.Add(stdInfo);
+            }
+        }
 
+        public bool KT_Nhap_SV()
+        {
+            if (string.IsNullOrWhiteSpace(txt_Student_ID.Text) == true || string.IsNullOrWhiteSpace(txt_Name.Text) == true || string.IsNullOrWhiteSpace(txt_Address.Text) == true)
+                return false;
+            return true;
         }
     }
 }

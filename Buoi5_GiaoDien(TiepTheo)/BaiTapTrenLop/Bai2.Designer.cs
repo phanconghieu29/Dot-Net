@@ -51,6 +51,7 @@
             // 
             // trv_ListClass
             // 
+            trv_ListClass.FullRowSelect = true;
             trv_ListClass.Location = new Point(-1, 0);
             trv_ListClass.Name = "trv_ListClass";
             trv_ListClass.Size = new Size(305, 408);
@@ -59,7 +60,7 @@
             // cbo_Select_Class
             // 
             cbo_Select_Class.FormattingEnabled = true;
-            cbo_Select_Class.Location = new Point(432, 20);
+            cbo_Select_Class.Location = new Point(432, 12);
             cbo_Select_Class.Name = "cbo_Select_Class";
             cbo_Select_Class.Size = new Size(315, 28);
             cbo_Select_Class.TabIndex = 1;
@@ -67,7 +68,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(347, 23);
+            label1.Location = new Point(347, 15);
             label1.Name = "label1";
             label1.Size = new Size(72, 20);
             label1.TabIndex = 2;
