@@ -104,7 +104,7 @@ namespace BaiTapTrenLop
 
         private void txt_Student_ID_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(!Char.IsDigit(e.KeyChar) &&r.Is !ChaControl(e.KeyChar))
+            if(!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
             }
