@@ -88,5 +88,26 @@ namespace BaiTapTrenLop
                 return false;
             return true;
         }
+
+        private void txt_Student_ID_Leave(object sender, EventArgs e)
+        {
+            Control ctr = (Control)sender;
+            if (ctr.Text.Trim().Length == 0)
+            {
+                this.errorProvider1.SetError(ctr, "Mã số sinh viên không được để trống");
+            }
+            else
+            {
+                this.errorProvider1.Clear();
+            }
+        }
+
+        private void txt_Student_ID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(!Char.IsDigit(e.KeyChar) &&r.Is !ChaControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

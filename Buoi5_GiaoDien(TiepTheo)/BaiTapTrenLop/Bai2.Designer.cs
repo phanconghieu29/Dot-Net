@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             trv_ListClass = new TreeView();
             cbo_Select_Class = new ComboBox();
             label1 = new Label();
@@ -45,8 +46,10 @@
             btn_Add_Class = new Button();
             gb_Class_Info = new GroupBox();
             groupBox1 = new GroupBox();
+            errorProvider1 = new ErrorProvider(components);
             gb_Class_Info.SuspendLayout();
             groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             SuspendLayout();
             // 
             // trv_ListClass
@@ -98,6 +101,8 @@
             txt_Student_ID.Name = "txt_Student_ID";
             txt_Student_ID.Size = new Size(315, 27);
             txt_Student_ID.TabIndex = 7;
+            txt_Student_ID.KeyPress += txt_Student_ID_KeyPress;
+            txt_Student_ID.Leave += txt_Student_ID_Leave;
             // 
             // txt_Name
             // 
@@ -207,6 +212,10 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông Tin Lớp";
             // 
+            // errorProvider1
+            // 
+            errorProvider1.ContainerControl = this;
+            // 
             // Bai2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -225,6 +234,7 @@
             gb_Class_Info.PerformLayout();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -248,5 +258,6 @@
         private Button btn_Add_Class;
         private GroupBox gb_Class_Info;
         private GroupBox groupBox1;
+        private ErrorProvider errorProvider1;
     }
 }
