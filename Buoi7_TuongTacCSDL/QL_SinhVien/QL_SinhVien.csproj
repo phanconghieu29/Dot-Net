@@ -44,64 +44,64 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Diem.cs" />
-    <Compile Include="DiemForm.cs">
+    <Compile Include="ClassDiem.cs" />
+    <Compile Include="FormDiem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DiemForm.Designer.cs">
-      <DependentUpon>DiemForm.cs</DependentUpon>
+    <Compile Include="FormDiem.Designer.cs">
+      <DependentUpon>FormDiem.cs</DependentUpon>
     </Compile>
-    <Compile Include="Khoa.cs" />
-    <Compile Include="KhoaForm.cs">
+    <Compile Include="ClassKhoa.cs" />
+    <Compile Include="FormKhoa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KhoaForm.Designer.cs">
-      <DependentUpon>KhoaForm.cs</DependentUpon>
+    <Compile Include="FormKhoa.Designer.cs">
+      <DependentUpon>FormKhoa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Lop.cs" />
-    <Compile Include="LopForm.cs">
+    <Compile Include="ClassLop.cs" />
+    <Compile Include="FormLop.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LopForm.Designer.cs">
-      <DependentUpon>LopForm.cs</DependentUpon>
+    <Compile Include="FormLop.Designer.cs">
+      <DependentUpon>FormLop.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="MonHoc.cs" />
-    <Compile Include="MonHocForm.cs">
+    <Compile Include="ClassMonHoc.cs" />
+    <Compile Include="FormMonHoc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MonHocForm.Designer.cs">
-      <DependentUpon>MonHocForm.cs</DependentUpon>
+    <Compile Include="FormMonHoc.Designer.cs">
+      <DependentUpon>FormMonHoc.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SinhVien.cs" />
-    <Compile Include="SinhVienForm.cs">
+    <Compile Include="ClassSinhVien.cs" />
+    <Compile Include="FormSinhVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SinhVienForm.Designer.cs">
-      <DependentUpon>SinhVienForm.cs</DependentUpon>
+    <Compile Include="FormSinhVien.Designer.cs">
+      <DependentUpon>FormSinhVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Utilities.cs" />
-    <EmbeddedResource Include="DiemForm.resx">
-      <DependentUpon>DiemForm.cs</DependentUpon>
+    <Compile Include="ClassUtilities.cs" />
+    <EmbeddedResource Include="FormDiem.resx">
+      <DependentUpon>FormDiem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KhoaForm.resx">
-      <DependentUpon>KhoaForm.cs</DependentUpon>
+    <EmbeddedResource Include="FormKhoa.resx">
+      <DependentUpon>FormKhoa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LopForm.resx">
-      <DependentUpon>LopForm.cs</DependentUpon>
+    <EmbeddedResource Include="FormLop.resx">
+      <DependentUpon>FormLop.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MonHocForm.resx">
-      <DependentUpon>MonHocForm.cs</DependentUpon>
+    <EmbeddedResource Include="FormMonHoc.resx">
+      <DependentUpon>FormMonHoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -112,8 +112,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SinhVienForm.resx">
-      <DependentUpon>SinhVienForm.cs</DependentUpon>
+    <EmbeddedResource Include="FormSinhVien.resx">
+      <DependentUpon>FormSinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

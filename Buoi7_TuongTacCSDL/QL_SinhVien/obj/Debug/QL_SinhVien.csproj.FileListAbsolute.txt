@@ -12,3 +12,17 @@ E:\LuuDuLieuSinhVien\2001215781_PhanCongHieu\Buoi7_TuongTacCSDL\QL_SinhVien\obj\
 E:\LuuDuLieuSinhVien\2001215781_PhanCongHieu\Buoi7_TuongTacCSDL\QL_SinhVien\obj\Debug\QL_SinhVien.csproj.GenerateResource.Cache
 E:\LuuDuLieuSinhVien\2001215781_PhanCongHieu\Buoi7_TuongTacCSDL\QL_SinhVien\obj\Debug\QL_SinhVien.exe
 E:\LuuDuLieuSinhVien\2001215781_PhanCongHieu\Buoi7_TuongTacCSDL\QL_SinhVien\obj\Debug\QL_SinhVien.pdb
+E:\LuuDuLieuSinhVien\Dot-Net-main\Buoi7_TuongTacCSDL\QL_SinhVien\bin\Debug\QL_SinhVien.exe.config
+E:\LuuDuLieuSinhVien\Dot-Net-main\Buoi7_TuongTacCSDL\QL_SinhVien\obj\Debug\QL_SinhVien.exe
+E:\LuuDuLieuSinhVien\Dot-Net-main\Buoi7_TuongTacCSDL\QL_SinhVien\obj\Debug\QL_SinhVien.pdb
+E:\LuuDuLieuSinhVien\Dot-Net-main\Buoi7_TuongTacCSDL\QL_SinhVien\obj\Debug\QL_SinhVien.csprojResolveAssemblyReference.cache
+E:\LuuDuLieuSinhVien\Dot-Net-main\Buoi7_TuongTacCSDL\QL_SinhVien\obj\Debug\QL_SinhVien.FormDiem.resources
+E:\LuuDuLieuSinhVien\Dot-Net-main\Buoi7_TuongTacCSDL\QL_SinhVien\obj\Debug\QL_SinhVien.FormKhoa.resources
+E:\LuuDuLieuSinhVien\Dot-Net-main\Buoi7_TuongTacCSDL\QL_SinhVien\obj\Debug\QL_SinhVien.FormLop.resources
+E:\LuuDuLieuSinhVien\Dot-Net-main\Buoi7_TuongTacCSDL\QL_SinhVien\obj\Debug\QL_SinhVien.FormMain.resources
+E:\LuuDuLieuSinhVien\Dot-Net-main\Buoi7_TuongTacCSDL\QL_SinhVien\obj\Debug\QL_SinhVien.FormMonHoc.resources
+E:\LuuDuLieuSinhVien\Dot-Net-main\Buoi7_TuongTacCSDL\QL_SinhVien\obj\Debug\QL_SinhVien.Properties.Resources.resources
+E:\LuuDuLieuSinhVien\Dot-Net-main\Buoi7_TuongTacCSDL\QL_SinhVien\obj\Debug\QL_SinhVien.FormSinhVien.resources
+E:\LuuDuLieuSinhVien\Dot-Net-main\Buoi7_TuongTacCSDL\QL_SinhVien\obj\Debug\QL_SinhVien.csproj.GenerateResource.Cache
+E:\LuuDuLieuSinhVien\Dot-Net-main\Buoi7_TuongTacCSDL\QL_SinhVien\bin\Debug\QL_SinhVien.exe
+E:\LuuDuLieuSinhVien\Dot-Net-main\Buoi7_TuongTacCSDL\QL_SinhVien\bin\Debug\QL_SinhVien.pdb
