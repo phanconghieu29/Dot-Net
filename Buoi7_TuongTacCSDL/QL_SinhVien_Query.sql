@@ -46,9 +46,9 @@ GO
 -- Gán giá trị cho bảng Khoa
 INSERT INTO Khoa (MaKhoa, TenKhoa)
 VALUES
-    ('K001', 'Khoa Công nghệ thông tin'),
-    ('K002', 'Khoa Công nghệ thực phẩm'),
-    ('K003', 'Khoa Ngoại ngữ');
+    ('K001', N'Khoa Công nghệ thông tin'),
+    ('K002', N'Khoa Công nghệ thực phẩm'),
+    ('K003', N'Khoa Ngoại ngữ');
 
 -- Gán giá trị cho bảng Lop
 INSERT INTO Lop (MaLop, TenLop, MaKhoa)
@@ -60,15 +60,36 @@ VALUES
 -- Gán giá trị cho bảng SinhVien
 INSERT INTO SinhVien (MaSinhVien, HoTen, NgaySinh, MaLop)
 VALUES
-    ('2001215781', 'Phan Công Hiệu', '2003-03-29', 'L001'),
-    ('2030123981', 'Trần Thị B', '2003-02-15', 'L001'),
-    ('2007978921', 'Lê Văn C', '2003-05-20', 'L002');
+    ('2001215781', N'Phan Công Hiệu', '2003-03-29', 'L001'),
+    ('2030123981', N'Trần Thị B', '2003-02-15', 'L001'),
+    ('2007978921', N'Lê Văn C', '2003-05-20', 'L002');
 
 -- Gán giá trị cho bảng MonHoc
 INSERT INTO MonHoc (MaMonHoc, TenMonHoc)
 VALUES
-    ('MH001', 'Lập trình hướng đối tượng'),
-    ('MH002', 'Cơ sở dữ liệu'),
-    ('MH003', 'Công nghệ .NET');
+    ('MH001', N'Lập trình hướng đối tượng'),
+    ('MH002', N'Cơ sở dữ liệu'),
+    ('MH003', N'Công nghệ .NET');
 
-SELECT * FROM MonHoc
+SELECT * FROM Lop
+GO
+
+CREATE PROC sp_QueryAllKhoa As
+	BEGIN
+		Select * From KHOA
+	END
+
+GO
+CREATE PROC sp_InsertLop(@Malop nchar(10), @Tenlop nvarchar(15), @Makh nchar(10)) AS
+	BEGIN
+		INSERT INTO  LOP Values(@Malop, @Tenlop, @Makh)
+	END
+GO
+
+
+CREATE PROC sp_QueryLopWhereMakh(@Makh nchar(10)) AS
+	BEGIN
+		Select Malop, Tenlop
+		From LOP
+		Where Makhoa = @Makh
+	END

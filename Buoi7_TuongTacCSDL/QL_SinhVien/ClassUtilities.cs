@@ -5,53 +5,82 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using System.Windows.Forms;
 
 namespace QL_SinhVien
 {
     class ClassUtilities
     {
-        SqlConnection connect = new SqlConnection("Data Source = A109PC18; Initial Catalog = QL_SinhVien; Integrated Security = True");
+        static string strcon = "Data Source = A109PC30; Initial Catalog = QL_SinhVien; Integrated Security = True";
+        SqlConnection conn;
 
-        public SqlConnection Connect
+        public DataSet LoadAllKhoa()
         {
-            get { return connect; }
-            set { connect = value; }
-        }
-
-        public ClassUtilities() { }
-
-        public ClassUtilities(string strcn)
-        {
-            connect = new SqlConnection(strcn);
-        }
-
-        public List<ClassKhoa> GetAllKhoa()
-        {
-            List<ClassKhoa> list = new List<ClassKhoa>();
-            string queryString = "select * from Khoa";
-            SqlCommand cmd = new SqlCommand(queryString,connect);
-            //Mo ket noi
-            if(connect.State == ConnectionState.Closed)
+            DataSet ds = new DataSet();
+            try
             {
-                connect.Open();
-            }
-            //Khai bao command
-            using(SqlDataReader reader = cmd.ExecuteReader())
-            {
-                while(reader.Read())
+                //Ket noi va mo CSDL
+                conn = new SqlConnection(strcon);
+                if (conn.State == ConnectionState.Closed)
                 {
-                    ClassKhoa k = new ClassKhoa(reader["MaKhoa"].ToString(), reader["TenKhoa"].ToString());
-                    list.Add(k);
+                    conn.Open();
                 }
+                //Chon store procedure
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "sp_QueryAllKhoa";
+                //Thuc thi
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                //Fill du lieu vao ds
+                adapter.Fill(ds);
             }
-            //Gui command
-            cmd.ExecuteNonQuery();
-            //Dong ket noi
-            if(connect.State == ConnectionState.Open)
+            catch(Exception)
             {
-                connect.Close();
+                MessageBox.Show("Kết nối với CSDL thất bại!", "Thông báo");
             }
-            return list;
+            finally
+            {
+                conn.Close();
+            }
+            return ds;
+        }
+
+        public void InsertLop(ClassLop lop)
+        {
+            try
+            {
+                //Ket noi va mo CSDL
+                conn = new SqlConnection(strcon);
+                if (conn.State == ConnectionState.Closed)
+                {
+                    conn.Open();
+                }
+                //Chon store procedure
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "sp_InsertLop";
+
+                //Truyen tham so
+                cmd.Parameters.Add("@Malop", lop.MaLop);
+                cmd.Parameters.Add("@Tenlop", lop.TenLop);
+                cmd.Parameters.Add("@Makh", lop.MaKhoa);
+
+                // Thực thi
+                if (cmd.ExecuteNonQuery() > 0)
+                    MessageBox.Show("Đã thêm lớp mới thành công!", "Thông báo");
+                else
+                    MessageBox.Show("Việc thêm lớp mới bị thất bại!", "Thông báo");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Lỗi kết thêm dữ liệu!", "Thông báo");
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
     }
 }

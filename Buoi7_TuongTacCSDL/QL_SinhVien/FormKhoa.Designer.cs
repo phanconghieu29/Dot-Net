@@ -96,7 +96,7 @@
             this.btn_Sua.Text = "Sửa";
             this.btn_Sua.UseVisualStyleBackColor = true;
             // 
-            // KhoaForm
+            // FormKhoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -108,7 +108,7 @@
             this.Controls.Add(this.txt_Ten_Khoa);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_Ma_Khoa);
-            this.Name = "KhoaForm";
+            this.Name = "FormKhoa";
             this.Text = "Quản lý Khoa";
             this.ResumeLayout(false);
             this.PerformLayout();
